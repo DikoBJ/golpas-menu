@@ -93,21 +93,34 @@ h2 {
    3. HEADER
    ---------------------------------------------------------- */
 
+/* Layout:   Title ............ RU ҚАЗ EN
+             Main menu | Bar menu            */
 .site-header {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "title lang"
+    "tabs  tabs";
   align-items: center;
-  gap: 12px 16px;
+  gap: 14px 12px;
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 24px var(--page-padding) 16px;
 }
 
 .site-title {
-  width: 100%;
+  grid-area: title;
+  min-width: 0;
   font-size: 32px;
   line-height: 1.1;
 }
+
+.menu-tabs {
+  grid-area: tabs;
+  justify-self: start;
+}
+
+/* Phones: smaller title so it fits next to the language switch */
 
 /* Menu tabs and language switch share the same "pill" look */
 .menu-tabs,
@@ -120,7 +133,8 @@ h2 {
 }
 
 .language-switch {
-  margin-left: auto;   /* pushes the language switch to the right */
+  grid-area: lang;
+  justify-self: end;   /* top right corner */
 }
 
 .menu-tabs .button,
@@ -135,6 +149,21 @@ h2 {
 .language-switch .button.is-active {
   background: var(--color-active);
   color: var(--color-active-text);
+}
+
+/* Phones: smaller title so it fits next to the language switch */
+@media (max-width: 480px) {
+  .site-header {
+    padding-top: 16px;
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  .language-switch .button {
+    padding: 5px 10px;
+  }
 }
 
 

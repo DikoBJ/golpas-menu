@@ -1,0 +1,392 @@
+/* ==========================================================
+   Гол+Пас menu, styles
+
+   1. Design tokens   colors, fonts and sizes. Change the look here.
+   2. Page            base styles
+   3. Header          title, menu tabs, language switch
+   4. Buttons         one style for all buttons
+   5. Section bar     the sticky row of sections
+   6. Menu section    a section title and its dishes
+   7. Dish            photo, name, price, description
+   8. Price variants  dishes with several prices (0.5 l, 3 l)
+   9. Messages        error text
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   1. DESIGN TOKENS
+   ---------------------------------------------------------- */
+
+:root {
+  /* Colors. One dark green theme, the same on every phone. */
+  --color-background: #0a1f16;
+  --color-surface: #10291e;
+  --color-text: #edf3ec;
+  --color-text-muted: #9bb3a5;
+  --color-line: #1e3b2d;
+  --color-price: #f2b632;
+  --color-button: #12301f;
+  --color-active: #245a3d;       /* selected button: a deeper, calm green */
+  --color-active-text: #edf3ec;
+
+  /* Fonts */
+  --font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Montserrat", system-ui, sans-serif;
+
+  /* Sizes */
+  --content-width: 720px;   /* max width of the menu on big screens */
+  --page-padding: 16px;     /* space left and right */
+  --photo-size: 84px;
+  --photo-radius: 10px;
+  --button-radius: 999px;   /* fully round buttons */
+
+  /* Phones with a notch: keep content away from it */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+  box-sizing: border-box;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+}
+
+
+/* ----------------------------------------------------------
+   2. PAGE
+   ---------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* When a section scrolls into view, leave room for the sticky bar */
+  scroll-padding-top: calc(var(--safe-top) + 64px);
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font: 16px/1.4 var(--font-body);
+}
+
+/* Paints the notch area so content does not show through it */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: var(--safe-top);
+  background: var(--color-background);
+  z-index: 10;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------
+   3. HEADER
+   ---------------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 24px var(--page-padding) 16px;
+}
+
+.site-title {
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+/* Menu tabs and language switch share the same "pill" look */
+.menu-tabs,
+.language-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--button-radius);
+}
+
+.language-switch {
+  margin-left: auto;   /* pushes the language switch to the right */
+}
+
+.menu-tabs .button,
+.language-switch .button {
+  background: none;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  padding: 5px 14px;
+}
+
+.menu-tabs .button.is-active,
+.language-switch .button.is-active {
+  background: var(--color-active);
+  color: var(--color-active-text);
+}
+
+
+/* ----------------------------------------------------------
+   4. BUTTONS
+   ---------------------------------------------------------- */
+
+.button {
+  flex: none;
+  border: 0;
+  border-radius: var(--button-radius);
+  background: var(--color-button);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 15px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-price);
+  outline-offset: 2px;
+}
+
+
+/* ----------------------------------------------------------
+   5. SECTION BAR (sticky)
+   ---------------------------------------------------------- */
+
+.section-nav {
+  position: sticky;
+  top: var(--safe-top);
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  max-width: var(--content-width);  /* same width as the menu below */
+  margin: 0 auto;
+  padding: 10px var(--page-padding);
+  overflow-x: auto;                /* scrolls sideways when there are many sections */
+  background: var(--color-background);
+  border-bottom: 1px solid var(--color-line);
+  scrollbar-width: none;            /* hide the scrollbar */
+}
+
+.section-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* The section you are reading now */
+.section-nav .button.is-active {
+  background: var(--color-active);
+  color: var(--color-active-text);
+}
+
+
+/* ----------------------------------------------------------
+   6. MENU SECTION
+   ---------------------------------------------------------- */
+
+.menu {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding) 48px;
+}
+
+.menu-section__title {
+  margin: 32px 0 6px;
+  font-size: 23px;
+}
+
+
+/* ----------------------------------------------------------
+   7. DISH
+   Layout: photo on the left, text on the right.
+   ---------------------------------------------------------- */
+
+.dish {
+  display: grid;
+  grid-template-columns: var(--photo-size) 1fr;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+/* Real photo */
+img.dish__photo {
+  width: var(--photo-size);
+  height: var(--photo-size);
+  border-radius: var(--photo-radius);
+  object-fit: cover;
+}
+
+/* Empty frame with a small plate drawn with two circles */
+.dish__photo--empty {
+  display: grid;
+  place-items: center;
+  width: var(--photo-size);
+  height: var(--photo-size);
+  border-radius: var(--photo-radius);
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+.dish__photo--empty::before,
+.dish__photo--empty::after {
+  content: "";
+  grid-area: 1 / 1;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+}
+
+.dish__photo--empty::before {
+  width: 36px;
+  height: 36px;
+}
+
+.dish__photo--empty::after {
+  width: 20px;
+  height: 20px;
+}
+
+/* Name on the left, price on the right */
+.dish__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.dish__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dish__price {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--color-price);
+  white-space: nowrap;   /* keep "2 450 ₸" on one line */
+}
+
+.dish__description {
+  margin: 3px 0 0;
+  max-width: 60ch;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* Small badge before the name: "new", "spicy" */
+.dish__badge {
+  margin-right: 6px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--color-price);
+  color: var(--color-background);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------
+   8. PRICE VARIANTS
+   Example:  1 500 ₸ ............ 0.5 l
+   ---------------------------------------------------------- */
+
+.dish__variants {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.variant {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 2px 0;
+}
+
+.variant__price {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-price);
+  white-space: nowrap;
+}
+
+.variant__dots {
+  flex: 1;                                        /* fills the space between price and label */
+  border-bottom: 2px dotted var(--color-line);
+}
+
+.variant__label {
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+
+/* ----------------------------------------------------------
+   8b. BACK TO TOP BUTTON
+   Sits in the bottom right corner, fades in after scrolling down.
+   ---------------------------------------------------------- */
+
+.to-top {
+  position: fixed;
+  right: max(16px, calc((100vw - var(--content-width)) / 2 - 64px));
+  bottom: calc(20px + var(--safe-bottom));
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+  background: var(--color-active);
+  color: var(--color-active-text);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.to-top[hidden] {
+  display: grid;   /* keep it in the layout so it can fade */
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.to-top:focus-visible {
+  outline: 2px solid var(--color-price);
+  outline-offset: 2px;
+}
+
+
+/* ----------------------------------------------------------
+   9. MESSAGES
+   ---------------------------------------------------------- */
+
+.message {
+  margin: 24px 0;
+  padding: 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  color: var(--color-text-muted);
+}

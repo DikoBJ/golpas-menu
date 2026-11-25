@@ -1,0 +1,3505 @@
+{
+  "settings": {
+    "markup": 1.3,
+    "step": 50,
+    "currency": "₸",
+    "defaultLanguage": "ru"
+  },
+  "languages": [
+    {
+      "code": "ru",
+      "label": "RU"
+    },
+    {
+      "code": "kk",
+      "label": "ҚАЗ"
+    },
+    {
+      "code": "en",
+      "label": "EN"
+    }
+  ],
+  "ui": {
+    "title": {
+      "ru": "Спорт-бар «Гол+Пас»",
+      "kk": "Гол+Пас спорт бары",
+      "en": "Gol+Pas Sports Bar"
+    },
+    "notes": {
+      "per100": {
+        "ru": "*Цена за 100 г",
+        "kk": "*100 г бағасы",
+        "en": "*Price per 100 g"
+      },
+      "until15": {
+        "ru": "*подается до 15:00",
+        "kk": "*15:00-ге дейін беріледі",
+        "en": "*served until 3 pm"
+      }
+    },
+    "tags": {
+      "new": {
+        "ru": "новинка",
+        "kk": "жаңа",
+        "en": "new"
+      },
+      "hot": {
+        "ru": "остро",
+        "kk": "ащы",
+        "en": "spicy"
+      }
+    },
+    "labels": {
+      "glass": {
+        "ru": "Бокал",
+        "kk": "Бокал",
+        "en": "Glass"
+      },
+      "bottle": {
+        "ru": "Бутылка",
+        "kk": "Бөтелке",
+        "en": "Bottle"
+      }
+    },
+    "units": {
+      "l": {
+        "ru": "л",
+        "kk": "л",
+        "en": "l"
+      },
+      "g": {
+        "ru": "г",
+        "kk": "г",
+        "en": "g"
+      }
+    }
+  },
+  "menus": [
+    {
+      "id": "main",
+      "title": {
+        "ru": "Основное меню",
+        "kk": "Негізгі мәзір",
+        "en": "Main menu"
+      },
+      "sections": [
+        {
+          "id": "hits",
+          "title": {
+            "ru": "Хиты продаж!",
+            "kk": "Хит тағамдар!",
+            "en": "Best sellers!"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Рибай на кости в чесночной корочке",
+                "kk": "Сарымсақты қабықтағы сүйекті рибай",
+                "en": "Bone-in ribeye in garlic crust"
+              },
+              "basePrice": 2000,
+              "basePriceRange": [
+                5800,
+                15000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Цезарь с курицей",
+                "kk": "Тауықты цезарь",
+                "en": "Chicken Caesar"
+              },
+              "description": {
+                "ru": "Куриное филе sous-vide, микс салата, помидоры, сухари, пармезан",
+                "kk": "Sous-vide тауық филесі, салат қоспасы, қызанақ, кептірілген нан, пармезан",
+                "en": "Sous-vide chicken fillet, mixed greens, tomatoes, croutons, parmesan"
+              },
+              "basePrice": 1900
+            },
+            {
+              "name": {
+                "ru": "Говяжьи ребра BBQ",
+                "kk": "BBQ сиыр қабырғасы",
+                "en": "BBQ beef ribs"
+              },
+              "basePrice": 10000
+            }
+          ]
+        },
+        {
+          "id": "cold",
+          "title": {
+            "ru": "Холодные закуски",
+            "kk": "Суық тіскебасарлар",
+            "en": "Cold starters"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Деликатесная доска",
+                "kk": "Деликатес тақтасы",
+                "en": "Game carpaccio board"
+              },
+              "description": {
+                "ru": "Карпаччо из медведя, карпаччо из лося, карпаччо из оленя, карпаччо из глухаря, карпаччо из утки, пармезан.",
+                "kk": "Аю, бұлан, бұғы, саңырау құр және үйрек карпаччосы, пармезан.",
+                "en": "Carpaccio of bear, moose, deer, capercaillie and duck, parmesan."
+              },
+              "basePrice": 9700,
+              "tag": "new"
+            },
+            {
+              "name": {
+                "ru": "Заначка деда",
+                "kk": "Атаның сақтаған тағамы",
+                "en": "Grandpa’s stash"
+              },
+              "description": {
+                "ru": "Сельдь, картофель, лук, корнишоны, капуста",
+                "kk": "Майшабақ, картоп, пияз, корнишондар, орамжапырақ",
+                "en": "Herring, potatoes, onion, gherkins, cabbage"
+              },
+              "basePrice": 3900
+            },
+            {
+              "name": {
+                "ru": "Овощная тарелка с брынзой",
+                "kk": "Брынзалы көкөніс табағы",
+                "en": "Vegetable plate with brynza cheese"
+              },
+              "description": {
+                "ru": "Свежие огурцы, помидоры, болгарский перец, брынза и микс трав",
+                "kk": "Балғын қияр, қызанақ, болгар бұрышы, брынза және шөптер қоспасы",
+                "en": "Fresh cucumbers, tomatoes, bell pepper, brynza cheese and mixed herbs"
+              },
+              "basePrice": 2900
+            },
+            {
+              "name": {
+                "ru": "Разносол на закуску",
+                "kk": "Тұздалған көкөніс ассортиі",
+                "en": "Pickle platter"
+              },
+              "description": {
+                "ru": "Патиссоны, корнишоны, помидоры, маринованные грибы и квашеная капуста",
+                "kk": "Патиссондар, корнишондар, қызанақ, маринадталған саңырауқұлақ және ашытылған орамжапырақ",
+                "en": "Pattypan squash, gherkins, tomatoes, pickled mushrooms and sauerkraut"
+              },
+              "basePrice": 3800
+            },
+            {
+              "name": {
+                "ru": "Брускетта с семгой (3 шт.)",
+                "kk": "Сёмгалы брускетта (3 дана)",
+                "en": "Salmon bruschetta (3 pcs)"
+              },
+              "description": {
+                "ru": "Багет, соленая семга, вяленые томаты, маслины и руккола",
+                "kk": "Багет, тұздалған сёмга, кептірілген қызанақ, зәйтүн және руккола",
+                "en": "Baguette, cured salmon, sun-dried tomatoes, olives and arugula"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Рулет с лососем и сыром",
+                "kk": "Албырт балықты және ірімшікті рулет",
+                "en": "Salmon and cheese roll"
+              },
+              "description": {
+                "ru": "Лаваш, плавленый сыр, соленый лосось, огурец, соус маракуйя",
+                "kk": "Лаваш, балқытылған ірімшік, тұздалған албырт балық, қияр, маракуйя тұздығы",
+                "en": "Lavash, cream cheese, cured salmon, cucumber, passion fruit sauce"
+              },
+              "basePrice": 3500
+            }
+          ]
+        },
+        {
+          "id": "hot",
+          "title": {
+            "ru": "Горячие закуски",
+            "kk": "Ыстық тіскебасарлар",
+            "en": "Hot starters"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Гриль для друзей на 4 персоны",
+                "kk": "4 адамға арналған достар грилі",
+                "en": "Grill for friends (serves 4)"
+              },
+              "description": {
+                "ru": "Говяжья печень, крылышки куриные, чесночный багет, колбаски охотничьи чили, медальоны, запеченный картофель",
+                "kk": "Сиыр бауыры, тауық қанаттары, сарымсақты багет, чили аңшы шұжықтары, медальондар, пісірілген картоп",
+                "en": "Beef liver, chicken wings, garlic baguette, spicy hunter's sausages, medallions, baked potatoes"
+              },
+              "basePrice": 14000
+            },
+            {
+              "name": {
+                "ru": "Креветки темпура",
+                "kk": "Темпура асшаяндары",
+                "en": "Shrimp tempura"
+              },
+              "basePrice": 3900
+            },
+            {
+              "name": {
+                "ru": "Кесадилья с курицей",
+                "kk": "Тауық еті бар кесадилья",
+                "en": "Chicken quesadilla"
+              },
+              "description": {
+                "ru": "Лепешки тортилья, куриная грудка, помидоры, зеленый лук, сыр гауда",
+                "kk": "Тортилья нандары, тауық төсі, қызанақ, жасыл пияз, Гауда ірімшігі",
+                "en": "Tortilla, chicken breast, tomatoes, green onion, Gouda cheese"
+              },
+              "basePrice": 2650
+            },
+            {
+              "name": {
+                "ru": "Кесадилья с говядиной",
+                "kk": "Сиыр еті бар кесадилья",
+                "en": "Beef quesadilla"
+              },
+              "description": {
+                "ru": "Лепешки тортилья, говядина, яйцо, помидоры, зеленый лук",
+                "kk": "Тортилья нандары, сиыр еті, жұмыртқа, қызанақ, жасыл пияз",
+                "en": "Tortilla, beef, egg, tomatoes, green onion"
+              },
+              "basePrice": 3300
+            },
+            {
+              "name": {
+                "ru": "Фирменные пирожки",
+                "kk": "Фирмалық бәліштер",
+                "en": "House pies"
+              },
+              "description": {
+                "ru": "Мини-пирожки с мясом, капустой, картофелем и грибами (9 шт.). Подается со сметаной.",
+                "kk": "Ет, орамжапырақ, картоп және саңырауқұлақ салынған мини бәліштер (9 дана). Қаймақпен беріледі.",
+                "en": "Mini pies with meat, cabbage, potato and mushrooms (9 pcs). Served with sour cream."
+              },
+              "basePrice": 2000
+            },
+            {
+              "name": {
+                "ru": "Куриные крылышки баффало с сырными палочками",
+                "kk": "Ірімшік таяқшалары бар баффало тауық қанаттары",
+                "en": "Buffalo chicken wings with cheese sticks"
+              },
+              "description": {
+                "ru": "Подаются с запеченным картофелем и сырными палочками",
+                "kk": "Пісірілген картоппен және ірімшік таяқшаларымен беріледі",
+                "en": "Served with baked potatoes and cheese sticks"
+              },
+              "basePrice": 4600,
+              "tag": "hot"
+            },
+            {
+              "name": {
+                "ru": "Баклажаны пармиджано",
+                "kk": "Пармиджано баклажандары",
+                "en": "Eggplant parmigiana"
+              },
+              "description": {
+                "ru": "Баклажаны, цукини, моцарелла, пармезан, руккола, соус песто",
+                "kk": "Баклажан, цукини, моцарелла, пармезан, руккола, песто тұздығы",
+                "en": "Eggplant, zucchini, mozzarella, parmesan, arugula, pesto sauce"
+              },
+              "basePrice": 3200
+            },
+            {
+              "name": {
+                "ru": "Язык на гриле с жареным сыром халуми",
+                "kk": "Қуырылған халуми ірімшігі бар грильдегі тіл",
+                "en": "Grilled tongue with fried halloumi"
+              },
+              "description": {
+                "ru": "Говяжий язык, халуми, томаты, лист салата",
+                "kk": "Сиыр тілі, халуми, қызанақ, салат жапырағы",
+                "en": "Beef tongue, halloumi, tomatoes, lettuce"
+              },
+              "basePrice": 5000
+            },
+            {
+              "name": {
+                "ru": "Брускетты с рваным мясом и перцами",
+                "kk": "Жыртылған ет пен бұрышты брускетталар",
+                "en": "Bruschetta with pulled meat and peppers"
+              },
+              "basePrice": 3600
+            },
+            {
+              "name": {
+                "ru": "Соте из морепродуктов",
+                "kk": "Теңіз өнімдерінен соте",
+                "en": "Seafood sauté"
+              },
+              "basePrice": 6500
+            }
+          ]
+        },
+        {
+          "id": "beer",
+          "title": {
+            "ru": "К пиву",
+            "kk": "Сыраға",
+            "en": "Beer snacks"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Пивная палитра",
+                "kk": "Сыра палитрасы",
+                "en": "Beer platter"
+              },
+              "description": {
+                "ru": "Цыпленок, острые колбаски, сырные палочки, картофельные дольки, сухарики.",
+                "kk": "Балапан тауық, ащы шұжықтар, ірімшік таяқшалары, картоп тілімдері, кептірілген нан.",
+                "en": "Chicken, spicy sausages, cheese sticks, potato wedges, croutons."
+              },
+              "basePrice": 7000
+            },
+            {
+              "name": {
+                "ru": "Арахис",
+                "kk": "Жержаңғақ",
+                "en": "Peanuts"
+              },
+              "basePrice": 1000
+            },
+            {
+              "name": {
+                "ru": "Жареный миндаль",
+                "kk": "Қуырылған бадам",
+                "en": "Roasted almonds"
+              },
+              "basePrice": 1600
+            },
+            {
+              "name": {
+                "ru": "Пивная тарелка «Гол»",
+                "kk": "«Гол» сыра табағы",
+                "en": "“Gol” beer platter"
+              },
+              "description": {
+                "ru": "Куриные шарики, рулет с брынзой, мойва",
+                "kk": "Тауық шарлары, брынзалы рулет, мойва",
+                "en": "Chicken balls, brynza roll, capelin"
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "Пивной микс",
+                "kk": "Сыра миксі",
+                "en": "Beer mix"
+              },
+              "description": {
+                "ru": "Сухари (40 г), арахис (60 г), соломка сома (35 г), жареный миндаль (50 г), фисташки (60 г).",
+                "kk": "Құрғақ нан (40 г), жержаңғақ (60 г), сом тілімшелері (35 г), қуырылған бадам (50 г), пісте (60 г).",
+                "en": "Croutons (40 g), peanuts (60 g), catfish strips (35 g), roasted almonds (50 g), pistachios (60 g)."
+              },
+              "basePrice": 4000
+            },
+            {
+              "name": {
+                "ru": "Пивные креветки",
+                "kk": "Сыраға арналған асшаяндар",
+                "en": "Beer shrimp"
+              },
+              "description": {
+                "ru": "Креветки, обжаренные в чесноке с коньяком и лимонным соком.",
+                "kk": "Сарымсақпен, коньякпен және лимон шырынымен қуырылған асшаяндар.",
+                "en": "Shrimp sautéed with garlic, cognac and lemon juice."
+              },
+              "basePrice": 3200
+            },
+            {
+              "name": {
+                "ru": "Фисташки",
+                "kk": "Пісте",
+                "en": "Pistachios"
+              },
+              "basePrice": 1800
+            },
+            {
+              "name": {
+                "ru": "Чесночные сухарики",
+                "kk": "Сарымсақты кептірілген нан",
+                "en": "Garlic croutons"
+              },
+              "basePrice": 1000
+            },
+            {
+              "name": {
+                "ru": "Вяленые слайсы из сазана",
+                "kk": "Кептірілген сазан тілімдері",
+                "en": "Dried carp slices"
+              },
+              "basePrice": 1600
+            },
+            {
+              "name": {
+                "ru": "Вяленая соломка сома",
+                "kk": "Кептірілген сом тілімшелері",
+                "en": "Dried catfish strips"
+              },
+              "basePrice": 1300
+            },
+            {
+              "name": {
+                "ru": "Вяленый микс",
+                "kk": "Кептірілген балық миксі",
+                "en": "Dried fish mix"
+              },
+              "description": {
+                "ru": "Соломка леща (30 г), слайсы сома (30 г), икра леща (30 г), слайсы сазана (30 г).",
+                "kk": "Табан балық тілімшелері (30 г), сом тілімдері (30 г), табан балық уылдырығы (30 г), сазан тілімдері (30 г).",
+                "en": "Bream strips (30 g), catfish slices (30 g), bream roe (30 g), carp slices (30 g)."
+              },
+              "basePrice": 3800
+            },
+            {
+              "name": {
+                "ru": "Тушка леща с лаймом",
+                "kk": "Лайм қосылған тұтас табан балық",
+                "en": "Whole bream with lime"
+              },
+              "basePrice": 1500
+            }
+          ]
+        },
+        {
+          "id": "salads",
+          "title": {
+            "ru": "Салаты",
+            "kk": "Салаттар",
+            "en": "Salads"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Овощной салат с домашним сыром и миндалем",
+                "kk": "Үй ірімшігі мен бадамы бар көкөніс салаты",
+                "en": "Vegetable salad with homemade cheese and almonds"
+              },
+              "description": {
+                "ru": "Огурцы, помидоры, оливки, миндаль, домашний сыр, зелень, бальзамик.",
+                "kk": "Қияр, қызанақ, зәйтүн, бадам, үй ірімшігі, көк, бальзамик.",
+                "en": "Cucumbers, tomatoes, olives, almonds, homemade cheese, herbs, balsamic."
+              },
+              "basePrice": 2250
+            },
+            {
+              "name": {
+                "ru": "Пикантный",
+                "kk": "Пикантты",
+                "en": "Piquant salad"
+              },
+              "description": {
+                "ru": "Кабачки и баклажаны, обжаренные на гриле, с соусом BBQ, микс салата, редис, вяленые томаты, говяжья вырезка.",
+                "kk": "BBQ тұздығымен грильде қуырылған кабачок пен баклажан, салат қоспасы, шомыр, кептірілген қызанақ, сиыр филесі.",
+                "en": "Grilled zucchini and eggplant with BBQ sauce, mixed greens, radish, sun-dried tomatoes, beef tenderloin."
+              },
+              "basePrice": 2800
+            },
+            {
+              "name": {
+                "ru": "Баклажаны sweet chili",
+                "kk": "Sweet chili баклажандары",
+                "en": "Sweet chili eggplant"
+              },
+              "description": {
+                "ru": "Хрустящие баклажаны в кисло-сладком соусе, томаты, лук, кинза",
+                "kk": "Тәтті-қышқыл тұздықтағы қытырлақ баклажан, қызанақ, пияз, кинза",
+                "en": "Crispy eggplant in sweet and sour sauce, tomatoes, onion, cilantro"
+              },
+              "basePrice": 2700
+            },
+            {
+              "name": {
+                "ru": "Греческий салат",
+                "kk": "Грек салаты",
+                "en": "Greek salad"
+              },
+              "description": {
+                "ru": "Помидоры черри, огурец, оливки, сыр фета, греческая заправка, красный лук, сельдерей, болгарский перец.",
+                "kk": "Черри қызанағы, қияр, зәйтүн, фета ірімшігі, грек тұздығы, қызыл пияз, балдыркөк, болгар бұрышы.",
+                "en": "Cherry tomatoes, cucumber, olives, feta, Greek dressing, red onion, celery, bell pepper."
+              },
+              "basePrice": 2300
+            },
+            {
+              "name": {
+                "ru": "Салат деревенский",
+                "kk": "Ауыл салаты",
+                "en": "Village salad"
+              },
+              "description": {
+                "ru": "Фасоль, говяжья вырезка, шампиньоны, огурец, помидоры, лук, кинза и петрушка",
+                "kk": "Үрме бұршақ, сиыр филесі, шампиньон, қияр, қызанақ, пияз, кинза және ақжелкен",
+                "en": "Beans, beef tenderloin, mushrooms, cucumber, tomatoes, onion, cilantro and parsley"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Салат с запеченной свеклой и тыквенными семечками",
+                "kk": "Пісірілген қызылша мен асқабақ тұқымы бар салат",
+                "en": "Salad with roasted beets and pumpkin seeds"
+              },
+              "description": {
+                "ru": "Запеченная свекла, руккола, сыр фета, тыквенные семечки.",
+                "kk": "Пісірілген қызылша, руккола, фета ірімшігі, асқабақ тұқымы.",
+                "en": "Roasted beet, arugula, feta, pumpkin seeds."
+              },
+              "basePrice": 1800
+            },
+            {
+              "name": {
+                "ru": "Салат с креветками",
+                "kk": "Асшаянды салат",
+                "en": "Shrimp salad"
+              },
+              "description": {
+                "ru": "Тигровые креветки, микс салата, руккола, помидоры черри, мякоть апельсина, соус маракуйя",
+                "kk": "Жолбарыс асшаяндары, салат қоспасы, руккола, черри қызанағы, апельсин еті, маракуйя тұздығы",
+                "en": "Tiger prawns, mixed greens, arugula, cherry tomatoes, orange segments, passion fruit sauce"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Салат с морепродуктами",
+                "kk": "Теңіз өнімдері салаты",
+                "en": "Seafood salad"
+              },
+              "description": {
+                "ru": "Микс салата, кальмары, осьминоги, креветки, огурцы, помидоры черри, болгарский перец, редис, сельдерей, кинза, цитрусовый соус.",
+                "kk": "Салат қоспасы, кальмар, сегізаяқ, асшаян, қияр, черри қызанағы, болгар бұрышы, шомыр, балдыркөк, кинза, цитрус тұздығы.",
+                "en": "Mixed greens, squid, octopus, shrimp, cucumbers, cherry tomatoes, bell pepper, radish, celery, cilantro, citrus sauce."
+              },
+              "basePrice": 3800
+            },
+            {
+              "name": {
+                "ru": "Теплый французский салат",
+                "kk": "Жылы француз салаты",
+                "en": "Warm French salad"
+              },
+              "description": {
+                "ru": "Запеченный рулет с говяжьим языком, брынза, кунжут, микс салата, руккола, черри, корнишоны, сельдерей, редис",
+                "kk": "Сиыр тілі салынған пісірілген рулет, брынза, күнжіт, салат қоспасы, руккола, черри, корнишондар, балдыркөк, шомыр",
+                "en": "Baked beef tongue roll, brynza, sesame, mixed greens, arugula, cherry tomatoes, gherkins, celery, radish"
+              },
+              "basePrice": 2600
+            },
+            {
+              "name": {
+                "ru": "Цезарь с курицей",
+                "kk": "Тауықты цезарь",
+                "en": "Chicken Caesar"
+              },
+              "description": {
+                "ru": "Куриное филе sous-vide, микс салата, помидоры, сухари, пармезан",
+                "kk": "Sous-vide тауық филесі, салат қоспасы, қызанақ, кептірілген нан, пармезан",
+                "en": "Sous-vide chicken fillet, mixed greens, tomatoes, croutons, parmesan"
+              },
+              "basePrice": 1900
+            },
+            {
+              "name": {
+                "ru": "Цезарь с семгой",
+                "kk": "Сёмгалы цезарь",
+                "en": "Salmon Caesar"
+              },
+              "description": {
+                "ru": "Обжаренная семга, микс салата, помидоры, сухарики, пармезан",
+                "kk": "Қуырылған сёмга, салат қоспасы, қызанақ, кептірілген нан, пармезан",
+                "en": "Pan-seared salmon, mixed greens, tomatoes, croutons, parmesan"
+              },
+              "basePrice": 2800
+            },
+            {
+              "name": {
+                "ru": "Салат с цыпленком",
+                "kk": "Балапан тауықты салат",
+                "en": "Chicken salad"
+              },
+              "basePrice": 1600,
+              "tag": "new"
+            }
+          ]
+        },
+        {
+          "id": "soups",
+          "title": {
+            "ru": "Супы",
+            "kk": "Сорпалар",
+            "en": "Soups"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Борщ по-польски",
+                "kk": "Поляк борщы",
+                "en": "Polish borscht"
+              },
+              "basePrice": 2800,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Грибной крем-суп",
+                "kk": "Саңырауқұлақ крем-сорпасы",
+                "en": "Cream of mushroom soup"
+              },
+              "basePrice": 2000
+            },
+            {
+              "name": {
+                "ru": "Солянка мясная",
+                "kk": "Етті солянка",
+                "en": "Meat solyanka"
+              },
+              "basePrice": 2350,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Сырный суп с креветками",
+                "kk": "Асшаянды ірімшік сорпасы",
+                "en": "Cheese soup with shrimp"
+              },
+              "basePrice": 3800
+            },
+            {
+              "name": {
+                "ru": "Тыквенный крем-суп",
+                "kk": "Асқабақ крем-сорпасы",
+                "en": "Cream of pumpkin soup"
+              },
+              "description": {
+                "ru": "Тыква, тертый имбирь, чеснок.",
+                "kk": "Асқабақ, үгітілген зімбір, сарымсақ.",
+                "en": "Pumpkin, grated ginger, garlic."
+              },
+              "basePrice": 1300,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Уха с дорадо",
+                "kk": "Дорадо балығынан уха",
+                "en": "Dorado fish soup"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Чечевичный крем-суп",
+                "kk": "Жасымық крем-сорпасы",
+                "en": "Cream of lentil soup"
+              },
+              "basePrice": 1400,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Острый тайский суп",
+                "kk": "Ащы тай сорпасы",
+                "en": "Spicy Thai soup"
+              },
+              "basePrice": 3100
+            }
+          ]
+        },
+        {
+          "id": "miratorg",
+          "title": {
+            "ru": "Стейки Мираторг",
+            "kk": "Мираторг стейктері",
+            "en": "Miratorg steaks"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Рибай Wagyu стейк",
+                "kk": "Wagyu рибай стейкі",
+                "en": "Wagyu ribeye steak"
+              },
+              "description": {
+                "ru": "Говядина Wagyu от Мираторг: премиальное мраморное мясо коров породы Кросс-Вагю (Вагю и Абердин-Ангус).",
+                "kk": "Мираторг Wagyu сиыр еті: Кросс-Вагю тұқымды (Вагю мен Абердин-Ангус) сиырлардың премиум мәрмәр еті.",
+                "en": "Wagyu beef from Miratorg: premium marbled meat from Cross-Wagyu cattle (Wagyu and Aberdeen Angus)."
+              },
+              "basePrice": 10000,
+              "basePriceRange": [
+                15000,
+                38000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Стейк Стриплойн Wagyu",
+                "kk": "Wagyu стриплойн стейкі",
+                "en": "Wagyu striploin steak"
+              },
+              "basePrice": 7500,
+              "basePriceRange": [
+                18000,
+                36000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Стейк Рамп",
+                "kk": "Рамп стейкі",
+                "en": "Rump steak"
+              },
+              "basePrice": 2000,
+              "basePriceRange": [
+                7600,
+                13000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Рибай Prime",
+                "kk": "Prime рибай",
+                "en": "Prime ribeye"
+              },
+              "basePrice": 5000,
+              "basePriceRange": [
+                12000,
+                21600
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Стриплойн Prime",
+                "kk": "Prime стриплойн",
+                "en": "Prime striploin"
+              },
+              "basePrice": 4000,
+              "basePriceRange": [
+                10000,
+                17000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Рибай на кости в чесночной корочке",
+                "kk": "Сарымсақты қабықтағы сүйекті рибай",
+                "en": "Bone-in ribeye in garlic crust"
+              },
+              "basePrice": 2000,
+              "basePriceRange": [
+                5800,
+                15000
+              ],
+              "note": "per100"
+            }
+          ]
+        },
+        {
+          "id": "kazbeef",
+          "title": {
+            "ru": "Стейки Kazbeef и местная говядина",
+            "kk": "Kazbeef стейктері және жергілікті сиыр еті",
+            "en": "Kazbeef steaks and local beef"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Мраморный рибай. Kazbeef",
+                "kk": "Мәрмәр рибай. Kazbeef",
+                "en": "Marbled ribeye. Kazbeef"
+              },
+              "description": {
+                "ru": "Подается без кукурузы.",
+                "kk": "Жүгерісіз беріледі.",
+                "en": "Served without corn."
+              },
+              "basePrice": 4600,
+              "basePriceRange": [
+                8000,
+                15000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Стриплойн. Kazbeef",
+                "kk": "Стриплойн. Kazbeef",
+                "en": "Striploin. Kazbeef"
+              },
+              "basePrice": 3300,
+              "basePriceRange": [
+                7000,
+                10000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Медальоны из телятины",
+                "kk": "Бұзау еті медальондары",
+                "en": "Veal medallions"
+              },
+              "basePrice": 7800
+            },
+            {
+              "name": {
+                "ru": "Фланк",
+                "kk": "Фланк",
+                "en": "Flank"
+              },
+              "basePrice": 7000
+            },
+            {
+              "name": {
+                "ru": "Фермерский рибай",
+                "kk": "Фермерлік рибай",
+                "en": "Farmer’s ribeye"
+              },
+              "basePrice": 2000,
+              "basePriceRange": [
+                10000,
+                15000
+              ],
+              "note": "per100"
+            }
+          ]
+        },
+        {
+          "id": "sets",
+          "title": {
+            "ru": "Сеты стейков",
+            "kk": "Стейк сеттері",
+            "en": "Steak sets"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Мужская прихоть. Микс из стейков и колбаски",
+                "kk": "Ерлердің қалауы. Стейктер мен шұжықтар миксі",
+                "en": "Men’s feast. Steak and sausage mix"
+              },
+              "description": {
+                "ru": "Рамп, рибай на кости, стриплойн, колбаска из говядины, кукуруза и овощи гриль",
+                "kk": "Рамп, сүйекті рибай, стриплойн, сиыр шұжығы, жүгері және гриль көкөністері",
+                "en": "Rump, bone-in ribeye, striploin, beef sausage, corn and grilled vegetables"
+              },
+              "basePrice": 29000
+            },
+            {
+              "name": {
+                "ru": "Мраморный дуэт",
+                "kk": "Мәрмәр дуэті",
+                "en": "Marbled duo"
+              },
+              "description": {
+                "ru": "Мраморный рибай и стриплойн.",
+                "kk": "Мәрмәр рибай және стриплойн.",
+                "en": "Marbled ribeye and striploin."
+              },
+              "basePrice": 3800,
+              "basePriceRange": [
+                17000,
+                23000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Сет «Альтернатива»",
+                "kk": "Альтернатива сеті",
+                "en": "Alternative set"
+              },
+              "description": {
+                "ru": "2 стейка: фланк и рамп",
+                "kk": "2 стейк: фланк және рамп",
+                "en": "2 steaks: flank and rump"
+              },
+              "basePrice": 12500
+            },
+            {
+              "name": {
+                "ru": "BBQ сет",
+                "kk": "BBQ сет",
+                "en": "BBQ set"
+              },
+              "description": {
+                "ru": "Говяжьи ребра BBQ, томленая говядина, ароматная баранья корейка. Картофельные дольки, грибы в соусе BBQ",
+                "kk": "BBQ сиыр қабырғасы, бұқтырылған сиыр еті, хош иісті қозы қабырғасы. Картоп тілімдері, BBQ тұздығындағы саңырауқұлақтар",
+                "en": "BBQ beef ribs, slow-cooked beef, aromatic lamb rack. Potato wedges, mushrooms in BBQ sauce"
+              },
+              "basePrice": 28100
+            },
+            {
+              "name": {
+                "ru": "Мраморная доска",
+                "kk": "Мәрмәр тақтасы",
+                "en": "Marbled board"
+              },
+              "description": {
+                "ru": "Сет из стейков: фланк, рибай Kazbeef, рамп, томленая говядина. Подается с кукурузой, картофельными крокетами и 3 видами соусов (кетчуп, барбекю и грибной).",
+                "kk": "Стейктер сеті: фланк, Kazbeef рибайы, рамп, бұқтырылған сиыр еті. Жүгерімен, картоп крокеттерімен және 3 түрлі тұздықпен (кетчуп, барбекю және саңырауқұлақ) беріледі.",
+                "en": "Steak set: flank, Kazbeef ribeye, rump, slow-cooked beef. Served with corn, potato croquettes and 3 sauces (ketchup, barbecue and mushroom)."
+              },
+              "basePrice": 36000
+            }
+          ]
+        },
+        {
+          "id": "meat",
+          "title": {
+            "ru": "Мясо",
+            "kk": "Ет",
+            "en": "Meat"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Бефстроганов",
+                "kk": "Бефстроганов",
+                "en": "Beef stroganoff"
+              },
+              "description": {
+                "ru": "Вырезка из говядины в сливочном соусе и шампиньоны в булочке чиабатта Kazbeef",
+                "kk": "Кілегей тұздығындағы сиыр филесі және шампиньондар чиабатта тоқашында, Kazbeef",
+                "en": "Beef tenderloin in cream sauce with mushrooms in a ciabatta bun, Kazbeef"
+              },
+              "basePrice": 4400
+            },
+            {
+              "name": {
+                "ru": "Бифштекс из мраморной говядины под сырным соусом",
+                "kk": "Ірімшік тұздығы бар мәрмәр сиыр еті бифштексі",
+                "en": "Marbled beef steak with cheese sauce"
+              },
+              "description": {
+                "ru": "Рубленый вручную Kazbeef",
+                "kk": "Қолмен туралған Kazbeef",
+                "en": "Hand-chopped Kazbeef"
+              },
+              "basePrice": 5500
+            },
+            {
+              "name": {
+                "ru": "Венгерский гуляш",
+                "kk": "Венгр гуляшы",
+                "en": "Hungarian goulash"
+              },
+              "description": {
+                "ru": "Тушеные овощи с мраморной говядиной. Kazbeef",
+                "kk": "Мәрмәр сиыр етімен бұқтырылған көкөністер. Kazbeef",
+                "en": "Stewed vegetables with marbled beef. Kazbeef"
+              },
+              "basePrice": 6200
+            },
+            {
+              "name": {
+                "ru": "Рибай ягненка",
+                "kk": "Қозы рибайы",
+                "en": "Lamb ribeye"
+              },
+              "basePrice": 8100
+            },
+            {
+              "name": {
+                "ru": "Говяжьи ребра BBQ",
+                "kk": "BBQ сиыр қабырғасы",
+                "en": "BBQ beef ribs"
+              },
+              "basePrice": 10000
+            },
+            {
+              "name": {
+                "ru": "Говяжья печень с овощами",
+                "kk": "Көкөніс қосылған сиыр бауыры",
+                "en": "Beef liver with vegetables"
+              },
+              "description": {
+                "ru": "Печень, острый перец чили, болгарский перец, лук, стручковая фасоль в сливочно-устричном соусе",
+                "kk": "Бауыр, ащы чили бұрышы, болгар бұрышы, пияз, жасыл үрме бұршақ кілегейлі-устрицалы тұздықта",
+                "en": "Liver, hot chili pepper, bell pepper, onion, green beans in creamy oyster sauce"
+              },
+              "basePrice": 3350,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Картофель по-домашнему",
+                "kk": "Үйше картоп",
+                "en": "Home-style potatoes"
+              },
+              "description": {
+                "ru": "Kazbeef.",
+                "kk": "Kazbeef.",
+                "en": "Kazbeef."
+              },
+              "basePrice": 3900,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Мясо по-азиатски",
+                "kk": "Азиялық ет",
+                "en": "Asian-style beef"
+              },
+              "description": {
+                "ru": "Вырезка говядины, морковь, баклажан, кабачок, огурец, томаты, чили, соус соево-устричный. Kazbeef.",
+                "kk": "Сиыр филесі, сәбіз, баклажан, кабачок, қияр, қызанақ, чили, соя-устрица тұздығы. Kazbeef.",
+                "en": "Beef tenderloin, carrot, eggplant, zucchini, cucumber, tomatoes, chili, soy oyster sauce. Kazbeef."
+              },
+              "basePrice": 3200
+            },
+            {
+              "name": {
+                "ru": "Ароматная корейка ягненка",
+                "kk": "Хош иісті қозы қабырғасы",
+                "en": "Aromatic lamb rack"
+              },
+              "description": {
+                "ru": "Подача с кукурузой и чесночными чипсами",
+                "kk": "Жүгері және сарымсақ чипсімен беріледі",
+                "en": "Served with corn and garlic chips"
+              },
+              "basePrice": 11500
+            },
+            {
+              "name": {
+                "ru": "Бараньи ребрышки под соусом терияки",
+                "kk": "Терияки тұздығындағы қой қабырғасы",
+                "en": "Lamb ribs in teriyaki sauce"
+              },
+              "description": {
+                "ru": "Бараньи ребрышки, болгарский перец, кунжутные семечки, соус терияки",
+                "kk": "Қой қабырғалары, болгар бұрышы, күнжіт тұқымы, терияки тұздығы",
+                "en": "Lamb ribs, bell pepper, sesame seeds, teriyaki sauce"
+              },
+              "basePrice": 9000
+            },
+            {
+              "name": {
+                "ru": "Говяжья котлета с булгуром",
+                "kk": "Булгур қосылған сиыр котлеті",
+                "en": "Beef patty with bulgur"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Фермерские ребра с запеченным перцем",
+                "kk": "Пісірілген бұрышы бар фермерлік қабырға",
+                "en": "Farmer’s ribs with roasted pepper"
+              },
+              "basePrice": 10000
+            }
+          ]
+        },
+        {
+          "id": "poultry",
+          "title": {
+            "ru": "Птица",
+            "kk": "Құс еті",
+            "en": "Poultry"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Куриная котлета по-киевски",
+                "kk": "Киевше тауық котлеті",
+                "en": "Chicken Kyiv"
+              },
+              "description": {
+                "ru": "Котлета по-киевски с картофельным пюре.",
+                "kk": "Картоп езбесі қосылған киевше котлет.",
+                "en": "Chicken Kyiv with mashed potatoes."
+              },
+              "basePrice": 2400,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Куриное филе в золотистой корочке",
+                "kk": "Алтын түсті қытырлақ қабықтағы тауық филесі",
+                "en": "Golden crusted chicken fillet"
+              },
+              "basePrice": 2800
+            },
+            {
+              "name": {
+                "ru": "Куриное филе карри",
+                "kk": "Карри тауық филесі",
+                "en": "Chicken curry"
+              },
+              "basePrice": 2500,
+              "note": "until15"
+            },
+            {
+              "name": {
+                "ru": "Куриное филе с соусом песто",
+                "kk": "Песто тұздығы қосылған тауық филесі",
+                "en": "Chicken fillet with pesto sauce"
+              },
+              "basePrice": 4300
+            },
+            {
+              "name": {
+                "ru": "Цыпленок",
+                "kk": "Балапан тауық",
+                "en": "Roasted young chicken"
+              },
+              "description": {
+                "ru": "Запеченный цыпленок с размятым молодым картофелем.",
+                "kk": "Жас картоп езбесі қосылған пісірілген балапан тауық.",
+                "en": "Roasted young chicken with crushed baby potatoes."
+              },
+              "basePrice": 3500
+            }
+          ]
+        },
+        {
+          "id": "fish",
+          "title": {
+            "ru": "Рыба",
+            "kk": "Балық",
+            "en": "Fish"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Семга с соусом песто",
+                "kk": "Песто тұздығы қосылған сёмга",
+                "en": "Salmon with pesto sauce"
+              },
+              "basePrice": 6600
+            },
+            {
+              "name": {
+                "ru": "Дорадо с розмарином",
+                "kk": "Розмарин қосылған дорадо",
+                "en": "Dorado with rosemary"
+              },
+              "basePrice": 2200,
+              "basePriceRange": [
+                6000,
+                11000
+              ],
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Семга на гриле в сливочно-икорном соусе",
+                "kk": "Кілегейлі уылдырық тұздығындағы грильдегі сёмга",
+                "en": "Grilled salmon in cream and caviar sauce"
+              },
+              "basePrice": 6400
+            },
+            {
+              "name": {
+                "ru": "Сибас со шпинатом",
+                "kk": "Ыспанақ қосылған сибас",
+                "en": "Sea bass with spinach"
+              },
+              "basePrice": 3200,
+              "note": "per100"
+            },
+            {
+              "name": {
+                "ru": "Рыбная котлета с пюре из брокколи",
+                "kk": "Брокколи езбесі қосылған балық котлеті",
+                "en": "Fish cake with broccoli purée"
+              },
+              "basePrice": 3000
+            },
+            {
+              "name": {
+                "ru": "Сибас с запеченными овощами",
+                "kk": "Пісірілген көкөністері бар сибас",
+                "en": "Sea bass with roasted vegetables"
+              },
+              "basePrice": 3000,
+              "basePriceRange": [
+                9000,
+                15000
+              ],
+              "note": "per100"
+            }
+          ]
+        },
+        {
+          "id": "burgers",
+          "title": {
+            "ru": "Бургеры",
+            "kk": "Бургерлер",
+            "en": "Burgers"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Бургер «Черная шайба» с мраморной говядиной",
+                "kk": "Мәрмәр сиыр етінен «қара шайба» бургері",
+                "en": "“Black puck” burger with marbled beef"
+              },
+              "basePrice": 3800
+            },
+            {
+              "name": {
+                "ru": "Бургер с мраморной говядиной",
+                "kk": "Мәрмәр сиыр етінен бургер",
+                "en": "Marbled beef burger"
+              },
+              "basePrice": 3400
+            },
+            {
+              "name": {
+                "ru": "Бургер с куриным филе",
+                "kk": "Тауық филесінен бургер",
+                "en": "Chicken fillet burger"
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "Шеф-бургер",
+                "kk": "Шеф-бургер",
+                "en": "Chef’s burger"
+              },
+              "basePrice": 4600
+            },
+            {
+              "name": {
+                "ru": "Бургер с рваной говядиной",
+                "kk": "Жыртылған сиыр етінен бургер",
+                "en": "Pulled beef burger"
+              },
+              "basePrice": 4000
+            }
+          ]
+        },
+        {
+          "id": "skewers",
+          "title": {
+            "ru": "Шашлычки на гриле",
+            "kk": "Грильдегі шашлықтар",
+            "en": "Grilled skewers"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Шашлычки из курицы",
+                "kk": "Тауық шашлығы",
+                "en": "Chicken skewers"
+              },
+              "basePrice": 2700
+            },
+            {
+              "name": {
+                "ru": "Шашлычки из баранины",
+                "kk": "Қой еті шашлығы",
+                "en": "Lamb skewers"
+              },
+              "basePrice": 5000
+            },
+            {
+              "name": {
+                "ru": "Шашлычки из говядины",
+                "kk": "Сиыр еті шашлығы",
+                "en": "Beef skewers"
+              },
+              "basePrice": 5000
+            },
+            {
+              "name": {
+                "ru": "Шашлычки из утиного филе",
+                "kk": "Үйрек филесінен шашлық",
+                "en": "Duck fillet skewers"
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "Микс шашлычков на гриле",
+                "kk": "Грильдегі шашлықтар миксі",
+                "en": "Grilled skewer mix"
+              },
+              "basePrice": 12500
+            }
+          ]
+        },
+        {
+          "id": "sausages",
+          "title": {
+            "ru": "Колбаски",
+            "kk": "Шұжықтар",
+            "en": "Sausages"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Колбаски из баранины с гарниром",
+                "kk": "Гарнирі бар қой етінен шұжықтар",
+                "en": "Lamb sausages with side"
+              },
+              "description": {
+                "ru": "Подаются с маринованным луком, картофельными дольками и тушеной капустой",
+                "kk": "Маринадталған пиязбен, картоп тілімдерімен және бұқтырылған орамжапырақпен беріледі",
+                "en": "Served with pickled onion, potato wedges and stewed cabbage"
+              },
+              "basePrice": 2400
+            },
+            {
+              "name": {
+                "ru": "Колбаски из говядины с гарниром",
+                "kk": "Гарнирі бар сиыр етінен шұжықтар",
+                "en": "Beef sausages with side"
+              },
+              "description": {
+                "ru": "Подаются с маринованным луком, картофельными дольками и тушеной капустой",
+                "kk": "Маринадталған пиязбен, картоп тілімдерімен және бұқтырылған орамжапырақпен беріледі",
+                "en": "Served with pickled onion, potato wedges and stewed cabbage"
+              },
+              "basePrice": 2300
+            },
+            {
+              "name": {
+                "ru": "Колбаски из курицы и сыра с гарниром",
+                "kk": "Гарнирі бар тауық пен ірімшіктен шұжықтар",
+                "en": "Chicken and cheese sausages with side"
+              },
+              "description": {
+                "ru": "Подаются с маринованным луком, картофельными дольками и тушеной капустой",
+                "kk": "Маринадталған пиязбен, картоп тілімдерімен және бұқтырылған орамжапырақпен беріледі",
+                "en": "Served with pickled onion, potato wedges and stewed cabbage"
+              },
+              "basePrice": 2200
+            },
+            {
+              "name": {
+                "ru": "Микс колбасок с гарниром",
+                "kk": "Гарнирі бар шұжықтар миксі",
+                "en": "Sausage mix with side"
+              },
+              "basePrice": 6500
+            }
+          ]
+        },
+        {
+          "id": "pasta",
+          "title": {
+            "ru": "Паста",
+            "kk": "Паста",
+            "en": "Pasta"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Паста карбонара",
+                "kk": "Карбонара пастасы",
+                "en": "Pasta carbonara"
+              },
+              "basePrice": 4200
+            },
+            {
+              "name": {
+                "ru": "Паста Альфредо",
+                "kk": "Альфредо пастасы",
+                "en": "Pasta Alfredo"
+              },
+              "description": {
+                "ru": "Куриное филе и сыр пармезан под сливочным соусом",
+                "kk": "Тауық филесі және пармезан ірімшігі кілегейлі тұздықта",
+                "en": "Chicken fillet and parmesan in cream sauce"
+              },
+              "basePrice": 3500
+            },
+            {
+              "name": {
+                "ru": "Паста с семгой и соусом песто",
+                "kk": "Сёмга және песто тұздығы бар паста",
+                "en": "Pasta with salmon and pesto sauce"
+              },
+              "basePrice": 4800
+            },
+            {
+              "name": {
+                "ru": "Паста с морепродуктами",
+                "kk": "Теңіз өнімдері бар паста",
+                "en": "Seafood pasta"
+              },
+              "description": {
+                "ru": "Кальмар, креветки, осьминог",
+                "kk": "Кальмар, асшаян, сегізаяқ",
+                "en": "Squid, shrimp, octopus"
+              },
+              "basePrice": 5500
+            },
+            {
+              "name": {
+                "ru": "Паста с мясом и грибами",
+                "kk": "Ет пен саңырауқұлағы бар паста",
+                "en": "Pasta with meat and mushrooms"
+              },
+              "description": {
+                "ru": "Паста с мраморным мясом (Kazbeef), грибами шампиньонами, сливками и сыром пармезан.",
+                "kk": "Мәрмәр етімен (Kazbeef), шампиньондармен, кілегеймен және пармезан ірімшігімен паста.",
+                "en": "Pasta with marbled beef (Kazbeef), mushrooms, cream and parmesan."
+              },
+              "basePrice": 3700
+            },
+            {
+              "name": {
+                "ru": "Паста с тигровыми креветками",
+                "kk": "Жолбарыс асшаяндары бар паста",
+                "en": "Tiger prawn pasta"
+              },
+              "description": {
+                "ru": "Тигровые креветки, томаты, пармезан, масло оливковое",
+                "kk": "Жолбарыс асшаяндары, қызанақ, пармезан, зәйтүн майы",
+                "en": "Tiger prawns, tomatoes, parmesan, olive oil"
+              },
+              "basePrice": 3600
+            }
+          ]
+        },
+        {
+          "id": "pizza",
+          "title": {
+            "ru": "Пицца",
+            "kk": "Пицца",
+            "en": "Pizza"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Маргарита",
+                "kk": "Маргарита",
+                "en": "Margherita"
+              },
+              "description": {
+                "ru": "Моцарелла, орегано, помидор",
+                "kk": "Моцарелла, орегано, қызанақ",
+                "en": "Mozzarella, oregano, tomato"
+              },
+              "basePrice": 4000
+            },
+            {
+              "name": {
+                "ru": "Милано",
+                "kk": "Милано",
+                "en": "Milano"
+              },
+              "description": {
+                "ru": "Моцарелла, куриное филе, маслины, болгарский перец, руккола.",
+                "kk": "Моцарелла, тауық филесі, зәйтүн, болгар бұрышы, руккола.",
+                "en": "Mozzarella, chicken fillet, olives, bell pepper, arugula."
+              },
+              "basePrice": 4650
+            },
+            {
+              "name": {
+                "ru": "Пицца овощная",
+                "kk": "Көкөніс пиццасы",
+                "en": "Vegetable pizza"
+              },
+              "description": {
+                "ru": "Моцарелла, кабачки, болгарский перец, шампиньоны, маслины, соус песто.",
+                "kk": "Моцарелла, кабачок, болгар бұрышы, шампиньон, зәйтүн, песто тұздығы.",
+                "en": "Mozzarella, zucchini, bell pepper, mushrooms, olives, pesto sauce."
+              },
+              "basePrice": 4200
+            },
+            {
+              "name": {
+                "ru": "Пицца с грибами и говядиной",
+                "kk": "Саңырауқұлақ пен сиыр етті пицца",
+                "en": "Mushroom and beef pizza"
+              },
+              "basePrice": 4950
+            },
+            {
+              "name": {
+                "ru": "Пицца с курицей и грибами",
+                "kk": "Тауық пен саңырауқұлақты пицца",
+                "en": "Chicken and mushroom pizza"
+              },
+              "basePrice": 4500
+            },
+            {
+              "name": {
+                "ru": "Пицца с семгой",
+                "kk": "Сёмгалы пицца",
+                "en": "Salmon pizza"
+              },
+              "basePrice": 6200
+            },
+            {
+              "name": {
+                "ru": "Салями",
+                "kk": "Салями",
+                "en": "Salami"
+              },
+              "basePrice": 5000
+            },
+            {
+              "name": {
+                "ru": "Сфилатино",
+                "kk": "Сфилатино",
+                "en": "Sfilatino"
+              },
+              "description": {
+                "ru": "Моцарелла, копченая говядина, корнишоны, болгарский перец, руккола, маслины",
+                "kk": "Моцарелла, ысталған сиыр еті, корнишондар, болгар бұрышы, руккола, зәйтүн",
+                "en": "Mozzarella, smoked beef, gherkins, bell pepper, arugula, olives"
+              },
+              "basePrice": 4950
+            }
+          ]
+        },
+        {
+          "id": "sides",
+          "title": {
+            "ru": "Гарниры",
+            "kk": "Гарнирлер",
+            "en": "Sides"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Дикий рис",
+                "kk": "Жабайы күріш",
+                "en": "Wild rice"
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "Тушеная капуста",
+                "kk": "Бұқтырылған орамжапырақ",
+                "en": "Stewed cabbage"
+              },
+              "basePrice": 650
+            },
+            {
+              "name": {
+                "ru": "Картофель фри",
+                "kk": "Картоп фри",
+                "en": "French fries"
+              },
+              "basePrice": 950
+            },
+            {
+              "name": {
+                "ru": "Картофельное пюре",
+                "kk": "Картоп езбесі",
+                "en": "Mashed potatoes"
+              },
+              "basePrice": 900
+            },
+            {
+              "name": {
+                "ru": "Картофельные дольки",
+                "kk": "Картоп тілімдері",
+                "en": "Potato wedges"
+              },
+              "basePrice": 950
+            },
+            {
+              "name": {
+                "ru": "Картофельные крокеты",
+                "kk": "Картоп крокеттері",
+                "en": "Potato croquettes"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Кукуруза на гриле",
+                "kk": "Грильдегі жүгері",
+                "en": "Grilled corn"
+              },
+              "description": {
+                "ru": "Отваренная в молоке",
+                "kk": "Сүтте пісірілген",
+                "en": "Boiled in milk"
+              },
+              "basePrice": 1200
+            },
+            {
+              "name": {
+                "ru": "Микс фри",
+                "kk": "Фри миксі",
+                "en": "Mixed fries"
+              },
+              "description": {
+                "ru": "Картофельные дольки, фри, сырные палочки, луковые кольца",
+                "kk": "Картоп тілімдері, фри, ірімшік таяқшалары, пияз сақиналары",
+                "en": "Potato wedges, fries, cheese sticks, onion rings"
+              },
+              "basePrice": 4000
+            },
+            {
+              "name": {
+                "ru": "Овощи гратен",
+                "kk": "Көкөніс гратені",
+                "en": "Vegetable gratin"
+              },
+              "basePrice": 2100
+            },
+            {
+              "name": {
+                "ru": "Овощи гриль",
+                "kk": "Гриль көкөністері",
+                "en": "Grilled vegetables"
+              },
+              "basePrice": 1400
+            },
+            {
+              "name": {
+                "ru": "Жареные шампиньоны",
+                "kk": "Қуырылған шампиньондар",
+                "en": "Fried mushrooms"
+              },
+              "basePrice": 1350
+            },
+            {
+              "name": {
+                "ru": "Обжаренная стручковая фасоль",
+                "kk": "Қуырылған жасыл үрме бұршақ",
+                "en": "Sautéed green beans"
+              },
+              "basePrice": 1050
+            },
+            {
+              "name": {
+                "ru": "Шпинат со сливками",
+                "kk": "Кілегейлі ыспанақ",
+                "en": "Creamed spinach"
+              },
+              "basePrice": 1900
+            }
+          ]
+        },
+        {
+          "id": "bakery",
+          "title": {
+            "ru": "Хлебные изделия",
+            "kk": "Нан өнімдері",
+            "en": "Bakery"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Хлебная корзина",
+                "kk": "Нан себеті",
+                "en": "Bread basket"
+              },
+              "description": {
+                "ru": "5 видов булочек.",
+                "kk": "Тоқаштың 5 түрі.",
+                "en": "5 kinds of rolls."
+              },
+              "basePrice": 400
+            },
+            {
+              "name": {
+                "ru": "Чесночный багет",
+                "kk": "Сарымсақты багет",
+                "en": "Garlic baguette"
+              },
+              "basePrice": 600
+            }
+          ]
+        },
+        {
+          "id": "sauces",
+          "title": {
+            "ru": "Соусы",
+            "kk": "Тұздықтар",
+            "en": "Sauces"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "BBQ",
+                "kk": "BBQ",
+                "en": "BBQ"
+              },
+              "basePrice": 350
+            },
+            {
+              "name": {
+                "ru": "Кетчуп",
+                "kk": "Кетчуп",
+                "en": "Ketchup"
+              },
+              "basePrice": 250
+            },
+            {
+              "name": {
+                "ru": "Шашлычный",
+                "kk": "Шашлық тұздығы",
+                "en": "Shashlik sauce"
+              },
+              "basePrice": 150
+            },
+            {
+              "name": {
+                "ru": "Тартар",
+                "kk": "Тартар",
+                "en": "Tartar sauce"
+              },
+              "basePrice": 200
+            },
+            {
+              "name": {
+                "ru": "Сметана",
+                "kk": "Қаймақ",
+                "en": "Sour cream"
+              },
+              "basePrice": 250
+            },
+            {
+              "name": {
+                "ru": "Горчица",
+                "kk": "Қыша",
+                "en": "Mustard"
+              },
+              "basePrice": 200
+            },
+            {
+              "name": {
+                "ru": "Табаско",
+                "kk": "Табаско",
+                "en": "Tabasco"
+              },
+              "description": {
+                "ru": "20 г",
+                "kk": "20 г",
+                "en": "20 g"
+              },
+              "basePrice": 1000
+            },
+            {
+              "name": {
+                "ru": "Грибной",
+                "kk": "Саңырауқұлақ тұздығы",
+                "en": "Mushroom"
+              },
+              "basePrice": 500
+            },
+            {
+              "name": {
+                "ru": "Sweet chili",
+                "kk": "Sweet chili",
+                "en": "Sweet chili"
+              },
+              "basePrice": 500
+            },
+            {
+              "name": {
+                "ru": "Чимичури",
+                "kk": "Чимичурри",
+                "en": "Chimichurri"
+              },
+              "basePrice": 400
+            },
+            {
+              "name": {
+                "ru": "Сырный",
+                "kk": "Ірімшік тұздығы",
+                "en": "Cheese"
+              },
+              "basePrice": 200
+            }
+          ]
+        },
+        {
+          "id": "desserts",
+          "title": {
+            "ru": "Десерты",
+            "kk": "Десерттер",
+            "en": "Desserts"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Фисташково-малиновая меренга",
+                "kk": "Пісте-таңқурай меренгасы",
+                "en": "Pistachio-raspberry meringue"
+              },
+              "basePrice": 1800
+            },
+            {
+              "name": {
+                "ru": "Брауни",
+                "kk": "Брауни",
+                "en": "Brownie"
+              },
+              "basePrice": 1850
+            },
+            {
+              "name": {
+                "ru": "Замороженный чизкейк",
+                "kk": "Мұздатылған чизкейк",
+                "en": "Frozen cheesecake"
+              },
+              "basePrice": 1200
+            },
+            {
+              "name": {
+                "ru": "Яблочный штрудель с мороженым",
+                "kk": "Балмұздақты алма штруделі",
+                "en": "Apple strudel with ice cream"
+              },
+              "basePrice": 1300
+            },
+            {
+              "name": {
+                "ru": "Аффогато",
+                "kk": "Аффогато",
+                "en": "Affogato"
+              },
+              "description": {
+                "ru": "Эспрессо и 2 шарика мороженого",
+                "kk": "Эспрессо және 2 шар балмұздақ",
+                "en": "Espresso and 2 scoops of ice cream"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Мороженое",
+                "kk": "Балмұздақ",
+                "en": "Ice cream"
+              },
+              "description": {
+                "ru": "1 шарик на выбор: шоколадное, сливочное, соленая карамель.",
+                "kk": "1 шар таңдауыңызша: шоколадты, кілегейлі, тұзды карамель.",
+                "en": "1 scoop of your choice: chocolate, sweet cream, salted caramel."
+              },
+              "basePrice": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "title": {
+        "ru": "Барное меню",
+        "kk": "Бар мәзірі",
+        "en": "Bar menu"
+      },
+      "sections": [
+        {
+          "id": "coffee-tea",
+          "title": {
+            "ru": "Чай и кофе",
+            "kk": "Шай және кофе",
+            "en": "Tea and coffee"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Эспрессо",
+                "kk": "Эспрессо",
+                "en": "Espresso"
+              },
+              "basePrice": 800
+            },
+            {
+              "name": {
+                "ru": "Эспрессо доппио",
+                "kk": "Эспрессо доппио",
+                "en": "Double espresso"
+              },
+              "basePrice": 850
+            },
+            {
+              "name": {
+                "ru": "Американо",
+                "kk": "Американо",
+                "en": "Americano"
+              },
+              "basePrice": 800
+            },
+            {
+              "name": {
+                "ru": "Капучино",
+                "kk": "Капучино",
+                "en": "Cappuccino"
+              },
+              "basePrice": 900
+            },
+            {
+              "name": {
+                "ru": "Капучино Мега",
+                "kk": "Капучино Мега",
+                "en": "Cappuccino Mega"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Латте",
+                "kk": "Латте",
+                "en": "Latte"
+              },
+              "basePrice": 1050
+            },
+            {
+              "name": {
+                "ru": "Espresso tonic",
+                "kk": "Espresso tonic",
+                "en": "Espresso tonic"
+              },
+              "basePrice": 1650
+            },
+            {
+              "name": {
+                "ru": "Кофе с Baileys",
+                "kk": "Baileys қосылған кофе",
+                "en": "Coffee with Baileys"
+              },
+              "basePrice": 2150
+            },
+            {
+              "name": {
+                "ru": "Классический зеленый чай",
+                "kk": "Классикалық жасыл шай",
+                "en": "Classic green tea"
+              },
+              "description": {
+                "ru": "1 л",
+                "kk": "1 л",
+                "en": "1 l"
+              },
+              "basePrice": 1050
+            },
+            {
+              "name": {
+                "ru": "Черный чай",
+                "kk": "Қара шай",
+                "en": "Black tea"
+              },
+              "description": {
+                "ru": "1 л",
+                "kk": "1 л",
+                "en": "1 l"
+              },
+              "basePrice": 1050
+            },
+            {
+              "name": {
+                "ru": "Имбирный чай с мятой",
+                "kk": "Жалбызды зімбір шайы",
+                "en": "Ginger tea with mint"
+              },
+              "basePrice": 1600
+            },
+            {
+              "name": {
+                "ru": "Облепиховый чай с мятой",
+                "kk": "Жалбызды шырғанақ шайы",
+                "en": "Sea buckthorn tea with mint"
+              },
+              "basePrice": 2200
+            },
+            {
+              "name": {
+                "ru": "Марокканский чай",
+                "kk": "Марокко шайы",
+                "en": "Moroccan tea"
+              },
+              "description": {
+                "ru": "На выбор: классический или с каркаде.",
+                "kk": "Таңдауыңызша: классикалық немесе гибискусты.",
+                "en": "Choose classic or with hibiscus."
+              },
+              "basePrice": 1700
+            },
+            {
+              "name": {
+                "ru": "Ташкентский чай",
+                "kk": "Ташкент шайы",
+                "en": "Tashkent tea"
+              },
+              "basePrice": 1600
+            },
+            {
+              "name": {
+                "ru": "Чай ягодный",
+                "kk": "Жидекті шай",
+                "en": "Berry tea"
+              },
+              "basePrice": 1600
+            },
+            {
+              "name": {
+                "ru": "Молоко к чаю",
+                "kk": "Шайға сүт",
+                "en": "Milk for tea"
+              },
+              "description": {
+                "ru": "50 мл",
+                "kk": "50 мл",
+                "en": "50 ml"
+              },
+              "basePrice": 150
+            },
+            {
+              "name": {
+                "ru": "Лимон к чаю",
+                "kk": "Шайға лимон",
+                "en": "Lemon for tea"
+              },
+              "description": {
+                "ru": "50 г",
+                "kk": "50 г",
+                "en": "50 g"
+              },
+              "basePrice": 250
+            },
+            {
+              "name": {
+                "ru": "Мед",
+                "kk": "Бал",
+                "en": "Honey"
+              },
+              "description": {
+                "ru": "50 г",
+                "kk": "50 г",
+                "en": "50 g"
+              },
+              "basePrice": 200
+            },
+            {
+              "name": {
+                "ru": "Сиропы",
+                "kk": "Сироптар",
+                "en": "Syrups"
+              },
+              "description": {
+                "ru": "20 мл",
+                "kk": "20 мл",
+                "en": "20 ml"
+              },
+              "basePrice": 150
+            }
+          ]
+        },
+        {
+          "id": "soft-drinks",
+          "title": {
+            "ru": "Прохладительные напитки",
+            "kk": "Салқындатқыш сусындар",
+            "en": "Soft drinks"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Тбау",
+                "kk": "Тбау",
+                "en": "Tbau"
+              },
+              "description": {
+                "ru": "Питьевая вода из горных источников (на выбор: без газа или с газом)",
+                "kk": "Таулы бұлақтардың ауыз суы (таңдауыңызша: газсыз немесе газдалған)",
+                "en": "Mountain spring drinking water (still or sparkling)"
+              },
+              "variants": [
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 1100
+                },
+                {
+                  "label": "0,33 {l}",
+                  "basePrice": 850
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Mever",
+                "kk": "Mever",
+                "en": "Mever"
+              },
+              "description": {
+                "ru": "0,5 л",
+                "kk": "0,5 л",
+                "en": "0.5 l"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Рычал Су",
+                "kk": "Рычал Су",
+                "en": "Rychal Su"
+              },
+              "description": {
+                "ru": "Газированная минеральная вода",
+                "kk": "Газдалған минералды су",
+                "en": "Sparkling mineral water"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Казбек",
+                "kk": "Казбек",
+                "en": "Kazbek"
+              },
+              "description": {
+                "ru": "Минеральная вода Кавказа",
+                "kk": "Кавказдың минералды суы",
+                "en": "Mineral water from the Caucasus"
+              },
+              "basePrice": 900
+            },
+            {
+              "name": {
+                "ru": "Ягодный морс",
+                "kk": "Жидек морсы",
+                "en": "Berry mors"
+              },
+              "description": {
+                "ru": "Ягодный морс с добавлением цитрусовых.",
+                "kk": "Цитрус қосылған жидек морсы.",
+                "en": "Berry juice drink with citrus."
+              },
+              "variants": [
+                {
+                  "label": "0,3 {l}",
+                  "basePrice": 800
+                },
+                {
+                  "label": "1 {l}",
+                  "basePrice": 1900
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Лимонад Kazbek",
+                "kk": "Kazbek лимонады",
+                "en": "Kazbek lemonade"
+              },
+              "description": {
+                "ru": "На выбор: апельсин, гранат, вишня.",
+                "kk": "Таңдауыңызша: апельсин, анар, шие.",
+                "en": "Choose orange, pomegranate or cherry."
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "Ягодный лимонад",
+                "kk": "Жидекті лимонад",
+                "en": "Berry lemonade"
+              },
+              "description": {
+                "ru": "Вишня, смородина, базилик, мята.",
+                "kk": "Шие, қарақат, райхан, жалбыз.",
+                "en": "Cherry, currant, basil, mint."
+              },
+              "variants": [
+                {
+                  "label": "0,8 {l}",
+                  "basePrice": 2800
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Фирменные лимонады",
+                "kk": "Фирмалық лимонадтар",
+                "en": "House lemonades"
+              },
+              "description": {
+                "ru": "Цитрус, манго-маракуйя, тропик, мохито, киви-ананас.",
+                "kk": "Цитрус, манго-маракуйя, тропик, мохито, киви-ананас.",
+                "en": "Citrus, mango–passion fruit, tropical, mojito, kiwi-pineapple."
+              },
+              "basePrice": 2550
+            },
+            {
+              "name": {
+                "ru": "Сок ArtShani",
+                "kk": "ArtShani шырыны",
+                "en": "ArtShani juice"
+              },
+              "description": {
+                "ru": "Вкусы на выбор: апельсин, яблоко, вишня, томат.",
+                "kk": "Таңдауыңызша дәмдер: апельсин, алма, шие, қызанақ.",
+                "en": "Choice of flavors: orange, apple, cherry or tomato."
+              },
+              "variants": [
+                {
+                  "label": "0,25 {l}",
+                  "basePrice": 1300
+                },
+                {
+                  "label": "1 {l}",
+                  "basePrice": 2900
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Coca-Cola",
+                "kk": "Coca-Cola",
+                "en": "Coca-Cola"
+              },
+              "description": {
+                "ru": "На выбор: стандартная или без сахара.",
+                "kk": "Таңдауыңызша: стандартты немесе қантсыз.",
+                "en": "Choose regular or sugar-free."
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Schweppes",
+                "kk": "Schweppes",
+                "en": "Schweppes"
+              },
+              "basePrice": 1100
+            },
+            {
+              "name": {
+                "ru": "Молочные коктейли",
+                "kk": "Сүт коктейльдері",
+                "en": "Milkshakes"
+              },
+              "basePrice": 2050
+            }
+          ]
+        },
+        {
+          "id": "cocktails",
+          "title": {
+            "ru": "Алкогольные коктейли",
+            "kk": "Алкогольді коктейльдер",
+            "en": "Alcoholic cocktails"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Золотой мяч",
+                "kk": "Алтын доп",
+                "en": "Golden ball"
+              },
+              "description": {
+                "ru": "Сливочно-карамельный коктейль с ароматным ромом и лимонной свежестью, создающий гармонию сладкого и цитрусового.",
+                "kk": "Хош иісті ром мен лимон балғындығы бар кілегейлі-карамельді коктейль, тәтті мен цитрустың үйлесімі.",
+                "en": "A creamy caramel cocktail with aromatic rum and lemon freshness, a balance of sweet and citrus."
+              },
+              "basePrice": 2100,
+              "tag": "new"
+            },
+            {
+              "name": {
+                "ru": "Финальный свисток",
+                "kk": "Соңғы ысқырық",
+                "en": "Final whistle"
+              },
+              "description": {
+                "ru": "Насыщенный коктейль на основе белого и темного рома с мартини, апельсиновым соком и лаймом, завершающий вечер ярким вкусом.",
+                "kk": "Ақ және қара ром, мартини, апельсин шырыны мен лайм негізіндегі қою коктейль, кешті ашық дәммен аяқтайды.",
+                "en": "A rich cocktail of white and dark rum with martini, orange juice and lime, with a bright finish to the evening."
+              },
+              "basePrice": 2100,
+              "tag": "new"
+            },
+            {
+              "name": {
+                "ru": "Prosecco Royal",
+                "kk": "Prosecco Royal",
+                "en": "Prosecco Royal"
+              },
+              "description": {
+                "ru": "Экзотический коктейль с пюре манго и маракуйи на основе просекко дарит сочный вкус тропиков в игристом исполнении.",
+                "kk": "Манго мен маракуйя езбесі қосылған просекко негізіндегі экзотикалық коктейль тропиктің шырынды дәмін көпіршікті түрде сыйлайды.",
+                "en": "An exotic prosecco cocktail with mango and passion fruit purée, a juicy taste of the tropics in sparkling form."
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "Вишневый закат",
+                "kk": "Шие күнбатысы",
+                "en": "Cherry sunset"
+              },
+              "description": {
+                "ru": "Martini bianco, Jack Daniel’s, морс, лимон.",
+                "kk": "Martini bianco, Jack Daniel’s, морс, лимон.",
+                "en": "Martini bianco, Jack Daniel’s, berry juice, lemon."
+              },
+              "basePrice": 2200
+            },
+            {
+              "name": {
+                "ru": "Negroni grapefruit",
+                "kk": "Negroni grapefruit",
+                "en": "Negroni grapefruit"
+              },
+              "description": {
+                "ru": "Beefeater, Martini bitter, сироп, лимонный сок.",
+                "kk": "Beefeater, Martini bitter, сироп, лимон шырыны.",
+                "en": "Beefeater, Martini bitter, syrup, lemon juice."
+              },
+              "basePrice": 1700
+            },
+            {
+              "name": {
+                "ru": "Martini spritz",
+                "kk": "Martini spritz",
+                "en": "Martini spritz"
+              },
+              "description": {
+                "ru": "Легкий аперитив, где игристое просекко встречается с яркой горчинкой и цитрусовой свежестью Martini Fiero.",
+                "kk": "Көпіршікті просекко Martini Fiero-ның ашық ащылығы мен цитрус балғындығымен кездесетін жеңіл аперитив.",
+                "en": "A light aperitif where sparkling prosecco meets the bright bitterness and citrus freshness of Martini Fiero."
+              },
+              "basePrice": 4100
+            },
+            {
+              "name": {
+                "ru": "Cosmopolitan",
+                "kk": "Cosmopolitan",
+                "en": "Cosmopolitan"
+              },
+              "description": {
+                "ru": "Водка Absolut, Cointreau, лимонный сок, морс.",
+                "kk": "Absolut арағы, Cointreau, лимон шырыны, морс.",
+                "en": "Absolut vodka, Cointreau, lemon juice, berry juice."
+              },
+              "basePrice": 2600
+            },
+            {
+              "name": {
+                "ru": "Tequila sunrise",
+                "kk": "Tequila sunrise",
+                "en": "Tequila sunrise"
+              },
+              "description": {
+                "ru": "Яркий и сочный коктейль, где текила, апельсин и гренадин создают неповторимый «вкус утра».",
+                "kk": "Текила, апельсин және гренадин «таңның дәмін» жасайтын ашық әрі шырынды коктейль.",
+                "en": "A bright, juicy cocktail where tequila, orange and grenadine create an unique “taste of morning”."
+              },
+              "basePrice": 2200
+            },
+            {
+              "name": {
+                "ru": "Long Island iced tea",
+                "kk": "Long Island iced tea",
+                "en": "Long Island iced tea"
+              },
+              "description": {
+                "ru": "Absolut, Cointreau, Beefeater, Bacardi Carta Blanca, Olmeca Blanco, Coca-Cola, лайм.",
+                "kk": "Absolut, Cointreau, Beefeater, Bacardi Carta Blanca, Olmeca Blanco, Coca-Cola, лайм.",
+                "en": "Absolut, Cointreau, Beefeater, Bacardi Carta Blanca, Olmeca Blanco, Coca-Cola, lime."
+              },
+              "basePrice": 4200
+            },
+            {
+              "name": {
+                "ru": "Sex on the beach",
+                "kk": "Sex on the beach",
+                "en": "Sex on the beach"
+              },
+              "description": {
+                "ru": "Peachtree, Absolut, апельсиновый сок, морс.",
+                "kk": "Peachtree, Absolut, апельсин шырыны, морс.",
+                "en": "Peachtree, Absolut, orange juice, berry juice."
+              },
+              "basePrice": 3400
+            },
+            {
+              "name": {
+                "ru": "Mai tai",
+                "kk": "Mai tai",
+                "en": "Mai tai"
+              },
+              "description": {
+                "ru": "Bacardi black, Cointreau, Amaretto, гренадин, апельсиновый сок.",
+                "kk": "Bacardi black, Cointreau, amaretto, Grenadine, апельсин шырыны.",
+                "en": "Bacardi black, Cointreau, amaretto, grenadine, orange juice."
+              },
+              "basePrice": 4300
+            },
+            {
+              "name": {
+                "ru": "B-52",
+                "kk": "B-52",
+                "en": "B-52"
+              },
+              "description": {
+                "ru": "Kahlua, Baileys, Cointreau.",
+                "kk": "Kahlua, Baileys, Cointreau.",
+                "en": "Kahlua, Baileys, Cointreau."
+              },
+              "basePrice": 2400
+            },
+            {
+              "name": {
+                "ru": "Mojito",
+                "kk": "Mojito",
+                "en": "Mojito"
+              },
+              "description": {
+                "ru": "Bacardi, лайм, сахар, содовая и мята.",
+                "kk": "Bacardi, лайм, қант, сода және жалбыз.",
+                "en": "Bacardi, lime, sugar, soda and mint."
+              },
+              "basePrice": 1900
+            },
+            {
+              "name": {
+                "ru": "MARTINI FIERO&Tonic",
+                "kk": "MARTINI FIERO&Tonic",
+                "en": "MARTINI FIERO&Tonic"
+              },
+              "description": {
+                "ru": "Martini Fiero, Schweppes.",
+                "kk": "Martini Fiero, Schweppes.",
+                "en": "Martini Fiero, Schweppes."
+              },
+              "basePrice": 3100
+            },
+            {
+              "name": {
+                "ru": "Gin & tonic",
+                "kk": "Gin & tonic",
+                "en": "Gin & tonic"
+              },
+              "description": {
+                "ru": "Классический освежающий коктейль с легкой горчинкой тоника, ароматом джина и свежестью лайма.",
+                "kk": "Тониктің жеңіл ащылығы, джиннің хош иісі және лайм балғындығы бар классикалық сергітетін коктейль.",
+                "en": "A classic refreshing cocktail with the light bitterness of tonic, the aroma of gin and the freshness of lime."
+              },
+              "basePrice": 2600
+            },
+            {
+              "name": {
+                "ru": "Raspberry daiquiri",
+                "kk": "Raspberry daiquiri",
+                "en": "Raspberry daiquiri"
+              },
+              "description": {
+                "ru": "Bacardi Carta Blanca, лайм, малиновое пюре.",
+                "kk": "Bacardi Carta Blanca, лайм, таңқурай езбесі.",
+                "en": "Bacardi Carta Blanca, lime, raspberry purée."
+              },
+              "basePrice": 2000
+            },
+            {
+              "name": {
+                "ru": "Кровавая Мэри",
+                "kk": "Қанды Мэри",
+                "en": "Bloody Mary"
+              },
+              "basePrice": 2500
+            }
+          ]
+        },
+        {
+          "id": "wine",
+          "title": {
+            "ru": "Вино",
+            "kk": "Шарап",
+            "en": "Wine"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "El Chivo Sauvignon blanc",
+                "kk": "El Chivo Sauvignon blanc",
+                "en": "El Chivo Sauvignon blanc"
+              },
+              "description": {
+                "ru": "Белое сухое чилийское вино",
+                "kk": "Чилилік ақ құрғақ шарап",
+                "en": "Chilean dry white wine"
+              },
+              "basePrice": 12300
+            },
+            {
+              "name": {
+                "ru": "Le Filou",
+                "kk": "Le Filou",
+                "en": "Le Filou"
+              },
+              "description": {
+                "ru": "Белое сухое французское вино",
+                "kk": "Францияның ақ құрғақ шарабы",
+                "en": "French dry white wine"
+              },
+              "variants": [
+                {
+                  "label": "glass",
+                  "basePrice": 2650
+                },
+                {
+                  "label": "bottle",
+                  "basePrice": 13000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Domaine Sainte Cécile",
+                "kk": "Domaine Sainte Cécile",
+                "en": "Domaine Sainte Cécile"
+              },
+              "description": {
+                "ru": "Белое сухое французское вино",
+                "kk": "Францияның ақ құрғақ шарабы",
+                "en": "French dry white wine"
+              },
+              "basePrice": 16000
+            },
+            {
+              "name": {
+                "ru": "Domaine Sainte Cécile",
+                "kk": "Domaine Sainte Cécile",
+                "en": "Domaine Sainte Cécile"
+              },
+              "description": {
+                "ru": "Красное сухое французское вино",
+                "kk": "Францияның қызыл құрғақ шарабы",
+                "en": "French dry red wine"
+              },
+              "basePrice": 18000
+            },
+            {
+              "name": {
+                "ru": "Киндзмараули",
+                "kk": "Киндзмараули",
+                "en": "Kindzmarauli"
+              },
+              "description": {
+                "ru": "Красное полусладкое грузинское вино",
+                "kk": "Грузияның қызыл жартылай тәтті шарабы",
+                "en": "Georgian semi-sweet red wine"
+              },
+              "variants": [
+                {
+                  "label": "glass",
+                  "basePrice": 2250
+                },
+                {
+                  "label": "bottle",
+                  "basePrice": 10800
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Charton Rouge Moelleux",
+                "kk": "Charton Rouge Moelleux",
+                "en": "Charton Rouge Moelleux"
+              },
+              "description": {
+                "ru": "Красное полусладкое/сухое французское вино",
+                "kk": "Францияның қызыл жартылай тәтті/құрғақ шарабы",
+                "en": "French semi-sweet/dry red wine"
+              },
+              "variants": [
+                {
+                  "label": "glass",
+                  "basePrice": 2100
+                },
+                {
+                  "label": "bottle",
+                  "basePrice": 9300
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Carlo Rossi California Red",
+                "kk": "Carlo Rossi California Red",
+                "en": "Carlo Rossi California Red"
+              },
+              "basePrice": 7900
+            }
+          ]
+        },
+        {
+          "id": "sparkling",
+          "title": {
+            "ru": "Игристое вино и шампанское",
+            "kk": "Көпіршікті шарап және шампан",
+            "en": "Sparkling wine and champagne"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "MARTINI Prosecco DOC",
+                "kk": "MARTINI Prosecco DOC",
+                "en": "MARTINI Prosecco DOC"
+              },
+              "description": {
+                "ru": "Итальянское игристое сухое вино.",
+                "kk": "Италияның көпіршікті құрғақ шарабы.",
+                "en": "Italian dry sparkling wine."
+              },
+              "variants": [
+                {
+                  "label": "bottle",
+                  "basePrice": 14400
+                },
+                {
+                  "label": "glass",
+                  "basePrice": 2600
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "MARTINI Asti",
+                "kk": "MARTINI Asti",
+                "en": "MARTINI Asti"
+              },
+              "description": {
+                "ru": "Итальянское игристое сладкое вино",
+                "kk": "Италияның көпіршікті тәтті шарабы",
+                "en": "Italian sweet sparkling wine"
+              },
+              "basePrice": 14400
+            },
+            {
+              "name": {
+                "ru": "Lambrusco Rosso, Bianco",
+                "kk": "Lambrusco Rosso, Bianco",
+                "en": "Lambrusco Rosso, Bianco"
+              },
+              "basePrice": 6500
+            },
+            {
+              "name": {
+                "ru": "Lambrusco rosso",
+                "kk": "Lambrusco rosso",
+                "en": "Lambrusco rosso"
+              },
+              "basePrice": 6500
+            },
+            {
+              "name": {
+                "ru": "Villa Sandi Dolce Spumante",
+                "kk": "Villa Sandi Dolce Spumante",
+                "en": "Villa Sandi Dolce Spumante"
+              },
+              "description": {
+                "ru": "Сладкое белое игристое вино",
+                "kk": "Тәтті ақ көпіршікті шарап",
+                "en": "Sweet white sparkling wine"
+              },
+              "basePrice": 20000
+            }
+          ]
+        },
+        {
+          "id": "beer-cider",
+          "title": {
+            "ru": "Пиво и сидр",
+            "kk": "Сыра және сидр",
+            "en": "Beer and cider"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Эльф Бавария (разливное)",
+                "kk": "Эльф Бавария (құйма сыра)",
+                "en": "Elf Bavaria (draft)"
+              },
+              "variants": [
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 1500
+                },
+                {
+                  "label": "3 {l}",
+                  "basePrice": 8700
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Bud",
+                "kk": "Bud",
+                "en": "Bud"
+              },
+              "variants": [
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 1750
+                },
+                {
+                  "label": "3 {l}",
+                  "basePrice": 10000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Heineken",
+                "kk": "Heineken",
+                "en": "Heineken"
+              },
+              "variants": [
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 1500
+                },
+                {
+                  "label": "3 {l}",
+                  "basePrice": 8700
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Line brew premium lager",
+                "kk": "Line brew premium lager",
+                "en": "Line brew premium lager"
+              },
+              "variants": [
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 1550
+                },
+                {
+                  "label": "3 {l}",
+                  "basePrice": 9000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Spaten",
+                "kk": "Spaten",
+                "en": "Spaten"
+              },
+              "basePrice": 3700
+            },
+            {
+              "name": {
+                "ru": "Эльф Бавария (бутылочное)",
+                "kk": "Эльф Бавария (бөтелкедегі)",
+                "en": "Elf Bavaria (bottled)"
+              },
+              "basePrice": 1300
+            },
+            {
+              "name": {
+                "ru": "Gallagher",
+                "kk": "Gallagher",
+                "en": "Gallagher"
+              },
+              "description": {
+                "ru": "Светлый лагер",
+                "kk": "Ашық лагер",
+                "en": "Light lager"
+              },
+              "basePrice": 1200
+            },
+            {
+              "name": {
+                "ru": "Казбек Бавария",
+                "kk": "Казбек Бавария",
+                "en": "Kazbek Bavaria"
+              },
+              "description": {
+                "ru": "На выбор: фильтрованное светлое, нефильтрованное светлое, фильтрованное темное.",
+                "kk": "Таңдауыңызша: сүзілген ашық, сүзілмеген ашық, сүзілген қара.",
+                "en": "Choose filtered light, unfiltered light or filtered dark."
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "Estrella Damm",
+                "kk": "Estrella Damm",
+                "en": "Estrella Damm"
+              },
+              "basePrice": 2900
+            },
+            {
+              "name": {
+                "ru": "Безалкогольный «Эльф»",
+                "kk": "Алкогольсіз эльф",
+                "en": "Non-alcoholic Elf"
+              },
+              "basePrice": 1300
+            },
+            {
+              "name": {
+                "ru": "Бавария безалкогольное",
+                "kk": "Алкогольсіз Бавария",
+                "en": "Bavaria non-alcoholic"
+              },
+              "description": {
+                "ru": "Светлое, фильтрованное.",
+                "kk": "Ашық, сүзілген.",
+                "en": "Light, filtered."
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "Gallagher 0",
+                "kk": "Gallagher 0",
+                "en": "Gallagher 0"
+              },
+              "basePrice": 1200
+            },
+            {
+              "name": {
+                "ru": "Heineken безалкогольное",
+                "kk": "Алкогольсіз Heineken",
+                "en": "Heineken non-alcoholic"
+              },
+              "basePrice": 1900
+            },
+            {
+              "name": {
+                "ru": "Double Tree",
+                "kk": "Double Tree",
+                "en": "Double Tree"
+              },
+              "description": {
+                "ru": "Яблочный полусухой сидр.",
+                "kk": "Алмалы жартылай құрғақ сидр.",
+                "en": "Semi-dry apple cider."
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "Double Tree PR",
+                "kk": "Double Tree PR",
+                "en": "Double Tree PR"
+              },
+              "description": {
+                "ru": "Полусладкий сидр. Вкусы на выбор: темная вишня, лесные ягоды или яблоко (0,75 л)",
+                "kk": "Жартылай тәтті сидр. Таңдауыңызша дәмдер: қара шие, орман жидектері және алма (0,75 л)",
+                "en": "Semi-sweet cider. Choice of flavors: dark cherry, wild berries or apple (0.75 l)"
+              },
+              "variants": [
+                {
+                  "label": "0,45 {l}",
+                  "basePrice": 1500
+                },
+                {
+                  "label": "0,75 {l}",
+                  "basePrice": 3000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Сидр White Phoenix безалкогольный",
+                "kk": "White Phoenix алкогольсіз сидры",
+                "en": "White Phoenix non-alcoholic cider"
+              },
+              "basePrice": 1300
+            }
+          ]
+        },
+        {
+          "id": "liqueurs",
+          "title": {
+            "ru": "Ликеры и аперитивы",
+            "kk": "Ликерлер мен аперитивтер",
+            "en": "Liqueurs and aperitifs"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "MARTINI Bianco",
+                "kk": "MARTINI Bianco",
+                "en": "MARTINI Bianco"
+              },
+              "description": {
+                "ru": "0,1 л",
+                "kk": "0,1 л",
+                "en": "0.1 l"
+              },
+              "basePrice": 1500
+            },
+            {
+              "name": {
+                "ru": "MARTINI Fiero",
+                "kk": "MARTINI Fiero",
+                "en": "MARTINI Fiero"
+              },
+              "basePrice": 1900
+            },
+            {
+              "name": {
+                "ru": "MARTINI Rosso",
+                "kk": "MARTINI Rosso",
+                "en": "MARTINI Rosso"
+              },
+              "basePrice": 1300
+            },
+            {
+              "name": {
+                "ru": "MARTINI RISERVA Bitter",
+                "kk": "MARTINI RISERVA Bitter",
+                "en": "MARTINI RISERVA Bitter"
+              },
+              "basePrice": 2100
+            },
+            {
+              "name": {
+                "ru": "Baileys",
+                "kk": "Baileys",
+                "en": "Baileys"
+              },
+              "basePrice": 1800
+            },
+            {
+              "name": {
+                "ru": "Jägermeister",
+                "kk": "Jägermeister",
+                "en": "Jägermeister"
+              },
+              "basePrice": 1600
+            }
+          ]
+        },
+        {
+          "id": "cognac",
+          "title": {
+            "ru": "Коньяк",
+            "kk": "Коньяк",
+            "en": "Cognac"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Арарат 5*",
+                "kk": "Арарат 5*",
+                "en": "Ararat 5*"
+              },
+              "basePrice": 1400
+            },
+            {
+              "name": {
+                "ru": "Martell VSOP",
+                "kk": "Martell VSOP",
+                "en": "Martell VSOP"
+              },
+              "basePrice": 4450
+            },
+            {
+              "name": {
+                "ru": "Martell VS",
+                "kk": "Martell VS",
+                "en": "Martell VS"
+              },
+              "basePrice": 3400
+            },
+            {
+              "name": {
+                "ru": "Женис",
+                "kk": "Жеңіс",
+                "en": "Zhenis"
+              },
+              "basePrice": 3300
+            }
+          ]
+        },
+        {
+          "id": "rum",
+          "title": {
+            "ru": "Ром",
+            "kk": "Ром",
+            "en": "Rum"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "BACARDI Carta Blanca",
+                "kk": "BACARDI Carta Blanca",
+                "en": "BACARDI Carta Blanca"
+              },
+              "basePrice": 1350
+            },
+            {
+              "name": {
+                "ru": "BACARDI Carta Negra",
+                "kk": "BACARDI Carta Negra",
+                "en": "BACARDI Carta Negra"
+              },
+              "basePrice": 1350
+            },
+            {
+              "name": {
+                "ru": "OAKHEART",
+                "kk": "OAKHEART",
+                "en": "OAKHEART"
+              },
+              "basePrice": 1150
+            }
+          ]
+        },
+        {
+          "id": "whisky",
+          "title": {
+            "ru": "Виски",
+            "kk": "Виски",
+            "en": "Whisky"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Jameson",
+                "kk": "Jameson",
+                "en": "Jameson"
+              },
+              "basePrice": 1800
+            },
+            {
+              "name": {
+                "ru": "Jack Daniel’s",
+                "kk": "Jack Daniel’s",
+                "en": "Jack Daniel’s"
+              },
+              "basePrice": 2250
+            },
+            {
+              "name": {
+                "ru": "Glenfiddich 12YO",
+                "kk": "Glenfiddich 12YO",
+                "en": "Glenfiddich 12YO"
+              },
+              "basePrice": 4800
+            },
+            {
+              "name": {
+                "ru": "Glenlivet 12YO",
+                "kk": "Glenlivet 12YO",
+                "en": "Glenlivet 12YO"
+              },
+              "basePrice": 5200
+            },
+            {
+              "name": {
+                "ru": "Chivas Regal 12YO",
+                "kk": "Chivas Regal 12YO",
+                "en": "Chivas Regal 12YO"
+              },
+              "basePrice": 2600
+            },
+            {
+              "name": {
+                "ru": "Monkey Shoulder",
+                "kk": "Monkey Shoulder",
+                "en": "Monkey Shoulder"
+              },
+              "basePrice": 3400
+            },
+            {
+              "name": {
+                "ru": "Four Roses Original",
+                "kk": "Four Roses Original",
+                "en": "Four Roses Original"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1900
+                },
+                {
+                  "label": "0,7 {l}",
+                  "basePrice": 26600
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vodka",
+          "title": {
+            "ru": "Водка",
+            "kk": "Арақ",
+            "en": "Vodka"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Qazaq eli nomad select",
+                "kk": "Qazaq eli nomad select",
+                "en": "Qazaq eli nomad select"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1200
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 11500
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Kyzylzhar PLATINUM",
+                "kk": "Kyzylzhar PLATINUM",
+                "en": "Kyzylzhar PLATINUM"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1600
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 15000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Kyzylzhar GOLD",
+                "kk": "Kyzylzhar GOLD",
+                "en": "Kyzylzhar GOLD"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1450
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 14000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Kyzylzhar Legend of Kazakhstan",
+                "kk": "Kyzylzhar Legend of Kazakhstan",
+                "en": "Kyzylzhar Legend of Kazakhstan"
+              },
+              "variants": [
+                {
+                  "label": "0,1 {l}",
+                  "basePrice": 1500
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 6300
+                },
+                {
+                  "label": "0,7 {l}",
+                  "basePrice": 8800
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Nemiroff De Luxe",
+                "kk": "Nemiroff De Luxe",
+                "en": "Nemiroff De Luxe"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1200
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 11300
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Absolut Blue",
+                "kk": "Absolut Blue",
+                "en": "Absolut Blue"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1450
+                },
+                {
+                  "label": "1 {l}",
+                  "basePrice": 22300
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Хортица ice",
+                "kk": "Хортица ice",
+                "en": "Khortytsa ice"
+              },
+              "variants": [
+                {
+                  "label": "0,1 {l}",
+                  "basePrice": 1200
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 5600
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Хортица Deluxe",
+                "kk": "Хортица Deluxe",
+                "en": "Khortytsa Deluxe"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1100
+                },
+                {
+                  "label": "0,75 {l}",
+                  "basePrice": 10000
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Fortuna organic",
+                "kk": "Fortuna organic",
+                "en": "Fortuna organic"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1800
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 16500
+                },
+                {
+                  "label": "0,7 {l}",
+                  "basePrice": 21800
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Romanov",
+                "kk": "Romanov",
+                "en": "Romanov"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 900
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 8100
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Grey Goose",
+                "kk": "Grey Goose",
+                "en": "Grey Goose"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 2400
+                },
+                {
+                  "label": "0,7 {l}",
+                  "basePrice": 32500
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "LEX by Nemiroff",
+                "kk": "LEX by Nemiroff",
+                "en": "LEX by Nemiroff"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 2750
+                },
+                {
+                  "label": "0,7 {l}",
+                  "basePrice": 37500
+                }
+              ]
+            },
+            {
+              "name": {
+                "ru": "Alexander I Romanov",
+                "kk": "Alexander I Romanov",
+                "en": "Alexander I Romanov"
+              },
+              "basePrice": 18700
+            },
+            {
+              "name": {
+                "ru": "Арктика",
+                "kk": "Арктика",
+                "en": "Arktika"
+              },
+              "variants": [
+                {
+                  "label": "0,05 {l}",
+                  "basePrice": 1150
+                },
+                {
+                  "label": "0,5 {l}",
+                  "basePrice": 11500
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gin",
+          "title": {
+            "ru": "Джин",
+            "kk": "Джин",
+            "en": "Gin"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Beefeater",
+                "kk": "Beefeater",
+                "en": "Beefeater"
+              },
+              "basePrice": 1850
+            }
+          ]
+        },
+        {
+          "id": "tequila",
+          "title": {
+            "ru": "Текила",
+            "kk": "Текила",
+            "en": "Tequila"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Olmeca blanco",
+                "kk": "Olmeca blanco",
+                "en": "Olmeca blanco"
+              },
+              "basePrice": 1700
+            },
+            {
+              "name": {
+                "ru": "Olmeca gold",
+                "kk": "Olmeca gold",
+                "en": "Olmeca gold"
+              },
+              "basePrice": 1700
+            }
+          ]
+        },
+        {
+          "id": "tobacco",
+          "title": {
+            "ru": "Табачные изделия",
+            "kk": "Темекі бұйымдары",
+            "en": "Tobacco"
+          },
+          "items": [
+            {
+              "name": {
+                "ru": "Стики Winston для устройства Ploom",
+                "kk": "Ploom құрылғысына арналған Winston стиктері",
+                "en": "Winston sticks for Ploom"
+              },
+              "description": {
+                "ru": "Winston Purple Option, Winston Green Option, Winston Baize Option, Winston Ruby Option, Winston Amarillo, Winston Gold.",
+                "kk": "Winston Purple Option, Winston Green Option, Winston Baize Option, Winston Ruby Option, Winston Amarillo, Winston Gold.",
+                "en": "Winston Purple Option, Winston Green Option, Winston Baize Option, Winston Ruby Option, Winston Amarillo, Winston Gold."
+              },
+              "basePrice": 2200
+            },
+            {
+              "name": {
+                "ru": "WINSTON XSTYLE CASTER BANAN",
+                "kk": "WINSTON XSTYLE CASTER BANAN",
+                "en": "WINSTON XSTYLE CASTER BANAN"
+              },
+              "basePrice": 2300
+            },
+            {
+              "name": {
+                "ru": "WINSTON XSTYLE SILVER",
+                "kk": "WINSTON XSTYLE SILVER",
+                "en": "WINSTON XSTYLE SILVER"
+              },
+              "basePrice": 2250
+            },
+            {
+              "name": {
+                "ru": "WINSTON SUPERSLIMS",
+                "kk": "WINSTON SUPERSLIMS",
+                "en": "WINSTON SUPERSLIMS"
+              },
+              "basePrice": 2250
+            },
+            {
+              "name": {
+                "ru": "RICHMOND GOLD EDITION",
+                "kk": "RICHMOND GOLD EDITION",
+                "en": "RICHMOND GOLD EDITION"
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "RICHMOND RED EDITION",
+                "kk": "RICHMOND RED EDITION",
+                "en": "RICHMOND RED EDITION"
+              },
+              "basePrice": 2500
+            },
+            {
+              "name": {
+                "ru": "RICHMOND ROYAL EDITION",
+                "kk": "RICHMOND ROYAL EDITION",
+                "en": "RICHMOND ROYAL EDITION"
+              },
+              "basePrice": 2500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

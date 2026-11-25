@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Гол+Пас · Меню</title>
+
+  <!-- Font: Montserrat for everything. It includes Kazakh letters. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="site-header">
+    <h1 class="site-title" id="site-title"></h1>
+
+    <!-- Main menu / Bar menu (filled by app.js) -->
+    <div class="menu-tabs" id="menu-tabs" role="group" aria-label="Menu"></div>
+
+    <!-- RU / KZ / EN (filled by app.js) -->
+    <div class="language-switch" id="language-switch" role="group" aria-label="Language"></div>
+  </header>
+
+  <!-- ============ SECTION BAR ============ -->
+  <!-- Sticky row of buttons, one per section of the current menu (filled by app.js) -->
+  <nav class="section-nav" id="section-nav" aria-label="Sections"></nav>
+
+  <!-- ============ MENU ============ -->
+  <!-- Sections and dishes are drawn here by app.js, using the templates below -->
+  <main class="menu" id="menu"></main>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <!-- Round button in the corner. Appears after you scroll down (app.js) -->
+  <button type="button" class="to-top" id="to-top" aria-label="Наверх" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+
+  <!-- =====================================================
+       TEMPLATES
+       app.js copies these and fills in the text.
+       To change how a dish looks, edit the HTML here
+       and the matching classes in styles.css.
+       ===================================================== -->
+
+  <!-- One button (used for menu tabs, languages and the section bar) -->
+  <template id="tpl-button">
+    <button type="button" class="button"></button>
+  </template>
+
+  <!-- One section, for example "Soups" -->
+  <template id="tpl-section">
+    <section class="menu-section">
+      <h2 class="menu-section__title"></h2>
+      <div class="menu-section__dishes"></div>
+    </section>
+  </template>
+
+  <!-- One dish -->
+  <template id="tpl-dish">
+    <article class="dish">
+
+      <!-- Empty photo frame. Replaced by a real <img> if the dish has a "photo" -->
+      <div class="dish__photo dish__photo--empty"></div>
+
+      <div class="dish__info">
+        <div class="dish__top">
+          <h3 class="dish__name">
+            <span class="dish__badge"></span>
+            <span class="dish__title"></span>
+          </h3>
+          <p class="dish__price"></p>
+        </div>
+
+        <p class="dish__description"></p>
+
+        <!-- Only for dishes with several prices, like 0.5 l and 3 l -->
+        <ul class="dish__variants"></ul>
+      </div>
+
+    </article>
+  </template>
+
+  <!-- One row inside dish__variants -->
+  <template id="tpl-variant">
+    <li class="variant">
+      <span class="variant__price"></span>
+      <span class="variant__dots"></span>
+      <span class="variant__label"></span>
+    </li>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
